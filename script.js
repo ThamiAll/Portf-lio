@@ -43,32 +43,39 @@ const translations = {
     case_kicker: "[ CONCEPT_PRODUCT // FINTECH & WEALTH ]",
     case_title: "Revolut Obsidian — The Next-Gen Private Wealth Experience",
     case_subtitle: "Concepção de produto, UX e viabilidade técnica para a expansão do segmento Ultra-High-End, integrando automação cambial preditiva e tokenização de cartões em tempo real.",
-    case_stat1_lbl: "Time-to-Transaction",
-    case_stat2_lbl: "Est. TPV Lift",
+    case_disc_tag: "[ DISCLAIMER // ESTUDO CONCEITUAL ]",
+    case_disc_text: "Este é um projeto autoral e conceitual de exploração de produto e UX. A marca Revolut foi utilizada exclusivamente como referência de ecossistema e estudo de caso prático para demonstrar estratégias de produto, arquitetura e design, sem vínculo comercial com a empresa.",
+    case_status_pill: "STATUS: PROTOTYPE_READY // v1.4.0",
+    case_stat1_lbl: "Tempo até 1ª Transação",
+    case_stat2_lbl: "Aumento Est. de TPV",
+    case_d1_tag: "[ 01 // DISCOVERY ]",
     case_d1_title: "Problem Framing & Contexto",
     case_d1_sub1: "Contexto de Mercado:",
-    case_d1_txt1: "Clientes de alta renda e investidores globais enfrentam atrito ao gerenciar múltiplos ativos cambiais em interfaces convencionais com excesso de ruído e lentidão na entrega do cartão físico.",
+    case_d1_txt1: "Clientes de alta renda e investidores globais enfrentam atrito ao gerenciar múltiplos ativos cambiais em interfaces bancárias convencionais, que sofrem com ruído visual, regras de spread pouco transparentes e lentidão na emissão física.",
     case_d1_sub2: "A Oportunidade:",
-    case_d1_txt2: "Criar uma camada de produto ultra-exclusiva (Obsidian) com interface minimalista, eliminação de atrito operacional e foco em liquidez instantânea.",
+    case_d1_txt2: "Criar uma camada de produto ultra-exclusiva (Obsidian) com interface minimalista, eliminação de atrito operacional e foco em liquidez instantânea entre fronteiras.",
     case_d1_sub3: "Stakeholders & Escopo:",
-    case_d1_txt3: "Alinhamento entre regras de negócio de câmbio (FX), compliance antifraude e arquitetura mobile nativa.",
-    case_d2_title: "Core Product Features",
+    case_d1_txt3: "Alinhamento de regras de negócio de câmbio (FX), compliance antifraude internacional e experiência mobile de alta fidelidade.",
+    case_d2_tag: "[ 02 // ESTRATÉGIA & UX ]",
+    case_d2_title: "Funcionalidades Principais do Produto",
     case_f1_title: "Predictive Multi-Currency Engine (IA de Câmbio)",
-    case_f1_desc: "Monitoramento contínuo de janelas cambiais favoráveis com conversão automática via regras de hedging.",
-    case_f2_title: "Dynamic Virtual Issuance",
-    case_f2_desc: "Emissão instantânea de cartões virtuais com tokenização direta no Apple/Google Wallet antes do envio do cartão físico.",
-    case_f3_title: "Zen Wealth Interface",
-    case_f3_desc: "Modo de visualização limpo, sem distrações comerciais, focado em patrimônio líquido consolidado em tempo real.",
-    case_d3_title: "Arquitetura Técnica & Metodologia",
+    case_f1_desc: "Monitoramento contínuo de janelas cambiais favoráveis com conversão automática baseada em gatilhos (hedging) definidos pelo usuário.",
+    case_f2_title: "Emissão Virtual Dinâmica",
+    case_f2_desc: "Emissão instantânea de cartões virtuais com tokenização direta no Apple/Google Wallet antes do despacho do cartão metálico físico.",
+    case_f3_title: "Interface Zen Wealth",
+    case_f3_desc: "Modo de visualização limpo, sem distrações promocionais, focado em patrimônio líquido consolidado em tempo real.",
+    case_d3_tag: "[ 03 // ARQUITETURA & GOVERNANÇA DE PO ]",
+    case_d3_title: "Arquitetura Técnica & Governança de PO",
     case_d3_sub1: "Frontend / UX:",
-    case_d3_txt1: "Microinterações a 60fps, transições fluidas (Next.js & Tailwind CSS) e arquitetura modular.",
+    case_d3_txt1: "Microinterações táteis em 60fps, transições fluidas (Next.js & Tailwind) e arquitetura de componentes modulares.",
     case_d3_sub2: "Backend & APIs:",
-    case_d3_txt2: "Microsserviços em Python para conciliação contábil, webhooks assíncronos e integração bancária.",
-    case_d3_sub3: "Agile Delivery (Jira / Notion):",
-    case_d3_txt3: "Épicos estruturados em Discovery, Tokenization, Dynamic Limits e Funil VIP, com critérios em formato BDD (Given-When-Then).",
+    case_d3_txt2: "Integração de microsserviços em Python para conciliação bancária, webhooks assíncronos de transações e roteamento de APIs de cartões.",
+    case_d3_sub3: "Entrega Ágil (Jira & Notion):",
+    case_d3_txt3: "Épicos divididos em: Discovery, Security & Tokenization, Dynamic Limits Engine e VIP Waitlist Funnel. Critérios de aceitação estruturados no formato BDD (Given-When-Then) para testes de carga e resiliência de rede.",
+    case_d4_tag: "[ 04 // IMPACTO & MÉTRICAS ]",
     case_d4_title: "Métricas & Impacto Esperado",
-    case_m1_lbl: "Waitlist Conversion Rate",
-    case_m2_lbl: "Time-to-First-Transaction",
+    case_m1_lbl: "Taxa de Conversão na Waitlist",
+    case_m2_lbl: "Tempo até 1ª Transação",
     case_m3_lbl: "Retenção & LTV (TPV)",
 
     about_kicker: "[ QUEM SOU ]",
@@ -177,8 +184,12 @@ const translations = {
     case_kicker: "[ CONCEPT_PRODUCT // FINTECH & WEALTH ]",
     case_title: "Revolut Obsidian — The Next-Gen Private Wealth Experience",
     case_subtitle: "Product design, UX strategy and technical feasibility for ultra-high-end banking, integrating predictive multi-currency hedging and instant virtual tokenization.",
+    case_disc_tag: "[ DISCLAIMER // CONCEPTUAL STUDY ]",
+    case_disc_text: "This is an independent conceptual exploration in product strategy and UX. The Revolut trademark was used solely as an ecosystem benchmark and case study context to showcase product architecture, design and engineering viability, with no official commercial affiliation with the company.",
+    case_status_pill: "STATUS: PROTOTYPE_READY // v1.4.0",
     case_stat1_lbl: "Time-to-Transaction",
     case_stat2_lbl: "Est. TPV Lift",
+    case_d1_tag: "[ 01 // DISCOVERY ]",
     case_d1_title: "Problem Framing & Discovery",
     case_d1_sub1: "Market Context:",
     case_d1_txt1: "High-net-worth individuals and global investors face friction managing multi-currency assets in conventional banking apps due to visual noise, hidden spreads, and slow physical card deliveries.",
@@ -186,6 +197,7 @@ const translations = {
     case_d1_txt2: "Engineer the Obsidian layer: an ultra-exclusive, zero-noise product tier focused on instant cross-border liquidity and automated hedging.",
     case_d1_sub3: "Stakeholders & Scope:",
     case_d1_txt3: "Full alignment across FX business logic, international anti-fraud compliance, and native mobile latency constraints.",
+    case_d2_tag: "[ 02 // STRATEGY & UX ]",
     case_d2_title: "Core Product Features",
     case_f1_title: "Predictive Multi-Currency Engine (FX AI)",
     case_f1_desc: "Continuous monitoring of favorable exchange windows with automated conversion triggers defined by client rules.",
@@ -193,6 +205,7 @@ const translations = {
     case_f2_desc: "Instant card issuance with 1-click provisioning for Apple Wallet & Google Pay before the physical metal card ships.",
     case_f3_title: "Zen Wealth Interface",
     case_f3_desc: "High-contrast, noise-free dashboard consolidating global net worth and multi-asset liquidity in real time.",
+    case_d3_tag: "[ 03 // ARCHITECTURE & PO GOVERNANCE ]",
     case_d3_title: "Technical Architecture & PO Governance",
     case_d3_sub1: "Frontend / UX:",
     case_d3_txt1: "60fps tactile microinteractions, fluid transitions (Next.js & Tailwind CSS), and atomic component architecture.",
@@ -200,6 +213,7 @@ const translations = {
     case_d3_txt2: "Python microservices for automated ledger reconciliation, async webhooks, and payment rails integration.",
     case_d3_sub3: "Agile Delivery (Jira / Notion):",
     case_d3_txt3: "Epics scoped into Discovery, Tokenization Engine, Dynamic Limits, and VIP Waitlist, backed by BDD acceptance criteria.",
+    case_d4_tag: "[ 04 // IMPACT & METRICS ]",
     case_d4_title: "Metrics & Expected Impact",
     case_m1_lbl: "Waitlist Conversion Rate",
     case_m2_lbl: "Time-to-First-Transaction",
@@ -271,13 +285,14 @@ const translations = {
   }
 };
 
-let currentLang = 'en';
+let currentLang = 'pt';
 
 function applyLanguage(lang) {
   currentLang = lang;
   document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
   document.getElementById('currentLangLabel').textContent = lang.toUpperCase();
 
+  // Atualiza todos os textos com data-i18n
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (translations[lang] && translations[lang][key]) {
@@ -285,6 +300,7 @@ function applyLanguage(lang) {
     }
   });
 
+  // Atualiza placeholders dos inputs
   document.querySelectorAll('[data-i18n-ph]').forEach(el => {
     const key = el.getAttribute('data-i18n-ph');
     if (translations[lang] && translations[lang][key]) {
@@ -292,6 +308,7 @@ function applyLanguage(lang) {
     }
   });
 
+  // Atualiza botões do dropdown
   document.querySelectorAll('.lang-opt').forEach(btn => {
     btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
   });

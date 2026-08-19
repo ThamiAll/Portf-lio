@@ -205,7 +205,6 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
   color:#ffffff;
 }
 
-/* Efeito fiel: branco puro no início e degradê Lilás/Rosa no final */
 .hero-title-grad{
   background:linear-gradient(90deg, #ffffff 0%, #ffffff 42%, #c4b5fd 62%, #a855f7 78%, #ec4899 96%);
   -webkit-background-clip:text;
@@ -339,7 +338,7 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
 .badge-mini:hover{ transform:translateY(-3px) scale(1.05); border-color:var(--c3); background:rgba(255,255,255,0.08); }
 @media(max-width:960px){ .bento-grid{ grid-template-columns:1fr; } .bento-wide{ grid-column:span 1; } }
 
-/* ---------- NOVO CASE STUDY: REVOLUT OBSIDIAN ---------- */
+/* ---------- CASE STUDY: REVOLUT OBSIDIAN ---------- */
 .case-study-section {
   padding: 10vh 5vw 12vh;
   border-top: 1px solid var(--line);
@@ -347,8 +346,8 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
 }
 
 .case-header {
-  max-width: 850px;
-  margin-bottom: 7vh;
+  max-width: 900px;
+  margin-bottom: 6vh;
 }
 
 .case-header h2 {
@@ -364,6 +363,33 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
   color: var(--ink-dim);
   font-size: 1.05rem;
   line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+/* Disclaimer Box com Estilo Terminal */
+.case-disclaimer-box {
+  padding: 18px 22px;
+  border-radius: 18px;
+  background: rgba(255, 79, 216, 0.03);
+  border: 1px dashed rgba(255, 79, 216, 0.28);
+  backdrop-filter: blur(8px);
+}
+
+.disclaimer-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--c3);
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+
+.case-disclaimer-box p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.6;
+  font-style: italic;
 }
 
 .case-grid {
@@ -373,7 +399,6 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
   align-items: start;
 }
 
-/* Coluna Sticky com Cartão */
 .case-sticky-card {
   position: sticky;
   top: 100px;
@@ -461,7 +486,6 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
   color: var(--ok);
 }
 
-/* Coluna de Conteúdo do Case */
 .case-content-col {
   display: flex;
   flex-direction: column;
@@ -580,7 +604,7 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
   }
 }
 
-/* ---------- about (Card Vertical com Foto) ---------- */
+/* ---------- about (Card Vertical com Foto Preto e Branco) ---------- */
 .about{
   position:relative;
   padding:6vh 5vw 14vh;
@@ -756,7 +780,7 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
 .shine-text{ background-size:200% auto; animation:shine 6s linear infinite; }
 @keyframes shine{ to { background-position:200% center; } }
 
-/* ---------- stack (Grid com 9 Itens Centralizados & Micro-spring) ---------- */
+/* ---------- stack (Grid com 9 Itens Centralizados) ---------- */
 .clients{ padding:8vh 5vw 10vh; text-align:center; }
 
 .client-grid{
@@ -800,7 +824,7 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
   object-fit:contain;
   opacity:0.8;
   filter:drop-shadow(0 2px 4px rgba(0,0,0,0.5));
-  transition:all .35s var(--ease-elastic);
+  transition:all .35s ease;
 }
 
 .client-tile:hover{
