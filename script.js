@@ -6,6 +6,7 @@ const translations = {
     nav_role: "Product Engineer & PO",
     nav_home: "Home",
     nav_bento: "Visão Geral",
+    nav_case: "Cases",
     nav_about: "Sobre",
     nav_services: "Atuação",
     nav_process: "Processo",
@@ -19,7 +20,7 @@ const translations = {
     hero_title_3: "& ENGENHARIA.",
     hero_desc: "Transformo problemas complexos de negócios em experiências digitais claras. Uno a visão estratégica de Product Owner com base técnica em Python e pesquisa orientada a dados.",
     hero_cta_main: "INICIAR CONVERSA",
-    hero_cta_sec: "VER DIFERENCIAIS",
+    hero_cta_sec: "VER CASES",
 
     hotspot_1: "RoomMatch — app de matching para moradia compartilhada com time técnico dedicado.",
     hotspot_2: "Decisões guiadas por comportamento e métricas reais de engajamento.",
@@ -38,6 +39,37 @@ const translations = {
     bento_card4_tag: "[ GOVERNANÇA & PROCESSOS ]",
     bento_card4_title: "Alinhamento entre Negócio, Design e Código",
     bento_card4_desc: "Gestão ágil de sprints, escrita de critérios de aceite detalhados e documentação robusta em Notion e Jira para garantir entregas pontuais e consistentes.",
+
+    case_kicker: "[ CONCEPT_PRODUCT // FINTECH & WEALTH ]",
+    case_title: "Revolut Obsidian — The Next-Gen Private Wealth Experience",
+    case_subtitle: "Concepção de produto, UX e viabilidade técnica para a expansão do segmento Ultra-High-End, integrando automação cambial preditiva e tokenização de cartões em tempo real.",
+    case_stat1_lbl: "Time-to-Transaction",
+    case_stat2_lbl: "Est. TPV Lift",
+    case_d1_title: "Problem Framing & Contexto",
+    case_d1_sub1: "Contexto de Mercado:",
+    case_d1_txt1: "Clientes de alta renda e investidores globais enfrentam atrito ao gerenciar múltiplos ativos cambiais em interfaces convencionais com excesso de ruído e lentidão na entrega do cartão físico.",
+    case_d1_sub2: "A Oportunidade:",
+    case_d1_txt2: "Criar uma camada de produto ultra-exclusiva (Obsidian) com interface minimalista, eliminação de atrito operacional e foco em liquidez instantânea.",
+    case_d1_sub3: "Stakeholders & Escopo:",
+    case_d1_txt3: "Alinhamento entre regras de negócio de câmbio (FX), compliance antifraude e arquitetura mobile nativa.",
+    case_d2_title: "Core Product Features",
+    case_f1_title: "Predictive Multi-Currency Engine (IA de Câmbio)",
+    case_f1_desc: "Monitoramento contínuo de janelas cambiais favoráveis com conversão automática via regras de hedging.",
+    case_f2_title: "Dynamic Virtual Issuance",
+    case_f2_desc: "Emissão instantânea de cartões virtuais com tokenização direta no Apple/Google Wallet antes do envio do cartão físico.",
+    case_f3_title: "Zen Wealth Interface",
+    case_f3_desc: "Modo de visualização limpo, sem distrações comerciais, focado em patrimônio líquido consolidado em tempo real.",
+    case_d3_title: "Arquitetura Técnica & Metodologia",
+    case_d3_sub1: "Frontend / UX:",
+    case_d3_txt1: "Microinterações a 60fps, transições fluidas (Next.js & Tailwind CSS) e arquitetura modular.",
+    case_d3_sub2: "Backend & APIs:",
+    case_d3_txt2: "Microsserviços em Python para conciliação contábil, webhooks assíncronos e integração bancária.",
+    case_d3_sub3: "Agile Delivery (Jira / Notion):",
+    case_d3_txt3: "Épicos estruturados em Discovery, Tokenization, Dynamic Limits e Funil VIP, com critérios em formato BDD (Given-When-Then).",
+    case_d4_title: "Métricas & Impacto Esperado",
+    case_m1_lbl: "Waitlist Conversion Rate",
+    case_m2_lbl: "Time-to-First-Transaction",
+    case_m3_lbl: "Retenção & LTV (TPV)",
 
     about_kicker: "[ QUEM SOU ]",
     about_heading: "Construindo pontes entre visão de negócio, código e design",
@@ -108,6 +140,7 @@ const translations = {
     nav_role: "Product Engineer & PO",
     nav_home: "Home",
     nav_bento: "Overview",
+    nav_case: "Cases",
     nav_about: "About",
     nav_services: "Services",
     nav_process: "Process",
@@ -121,7 +154,7 @@ const translations = {
     hero_title_3: "ENGINEERING.",
     hero_desc: "Transforming complex business challenges into seamless digital experiences. Combining strategic Product Ownership with solid Python foundations and data-driven UX.",
     hero_cta_main: "START A CONVERSATION",
-    hero_cta_sec: "EXPLORE MATRIX",
+    hero_cta_sec: "EXPLORE CASES",
 
     hotspot_1: "RoomMatch — roommate matching app built alongside a dedicated engineering team.",
     hotspot_2: "Product decisions backed by telemetry, research, and real user behavior.",
@@ -140,6 +173,37 @@ const translations = {
     bento_card4_tag: "[ GOVERNANCE & PROCESS ]",
     bento_card4_title: "Connecting Business, Design & Clean Code",
     bento_card4_desc: "Agile sprint management, detailed acceptance criteria, and comprehensive documentation in Notion & Jira for predictable deliveries.",
+
+    case_kicker: "[ CONCEPT_PRODUCT // FINTECH & WEALTH ]",
+    case_title: "Revolut Obsidian — The Next-Gen Private Wealth Experience",
+    case_subtitle: "Product design, UX strategy and technical feasibility for ultra-high-end banking, integrating predictive multi-currency hedging and instant virtual tokenization.",
+    case_stat1_lbl: "Time-to-Transaction",
+    case_stat2_lbl: "Est. TPV Lift",
+    case_d1_title: "Problem Framing & Discovery",
+    case_d1_sub1: "Market Context:",
+    case_d1_txt1: "High-net-worth individuals and global investors face friction managing multi-currency assets in conventional banking apps due to visual noise, hidden spreads, and slow physical card deliveries.",
+    case_d1_sub2: "The Opportunity:",
+    case_d1_txt2: "Engineer the Obsidian layer: an ultra-exclusive, zero-noise product tier focused on instant cross-border liquidity and automated hedging.",
+    case_d1_sub3: "Stakeholders & Scope:",
+    case_d1_txt3: "Full alignment across FX business logic, international anti-fraud compliance, and native mobile latency constraints.",
+    case_d2_title: "Core Product Features",
+    case_f1_title: "Predictive Multi-Currency Engine (FX AI)",
+    case_f1_desc: "Continuous monitoring of favorable exchange windows with automated conversion triggers defined by client rules.",
+    case_f2_title: "Dynamic Virtual Issuance",
+    case_f2_desc: "Instant card issuance with 1-click provisioning for Apple Wallet & Google Pay before the physical metal card ships.",
+    case_f3_title: "Zen Wealth Interface",
+    case_f3_desc: "High-contrast, noise-free dashboard consolidating global net worth and multi-asset liquidity in real time.",
+    case_d3_title: "Technical Architecture & PO Governance",
+    case_d3_sub1: "Frontend / UX:",
+    case_d3_txt1: "60fps tactile microinteractions, fluid transitions (Next.js & Tailwind CSS), and atomic component architecture.",
+    case_d3_sub2: "Backend & APIs:",
+    case_d3_txt2: "Python microservices for automated ledger reconciliation, async webhooks, and payment rails integration.",
+    case_d3_sub3: "Agile Delivery (Jira / Notion):",
+    case_d3_txt3: "Epics scoped into Discovery, Tokenization Engine, Dynamic Limits, and VIP Waitlist, backed by BDD acceptance criteria.",
+    case_d4_title: "Metrics & Expected Impact",
+    case_m1_lbl: "Waitlist Conversion Rate",
+    case_m2_lbl: "Time-to-First-Transaction",
+    case_m3_lbl: "TPV Lift & Retention",
 
     about_kicker: "[ ABOUT ME ]",
     about_heading: "Bridging the gap between business vision, clean code & design",
@@ -288,7 +352,7 @@ function renderLoop() {
 }
 renderLoop();
 
-document.querySelectorAll('.hoverable, a, button, input, textarea, .hotspot, .client-tile, .bento-card, .service-card').forEach(el => {
+document.querySelectorAll('.hoverable, a, button, input, textarea, .hotspot, .client-tile, .bento-card, .service-card, .case-card').forEach(el => {
   el.addEventListener('mouseenter', () => ring.classList.add('hover'));
   el.addEventListener('mouseleave', () => ring.classList.remove('hover'));
 });
@@ -319,7 +383,7 @@ window.addEventListener('scroll', () => {
   progress.style.width = pct + '%';
 });
 
-const sections = ['home', 'bento', 'about', 'services', 'process', 'contact'].map(id => document.getElementById(id)).filter(Boolean);
+const sections = ['home', 'bento', 'case-obsidian', 'about', 'services', 'process', 'contact'].map(id => document.getElementById(id)).filter(Boolean);
 const navA = document.querySelectorAll('#navLinks a');
 const navIO = new IntersectionObserver((entries) => {
   entries.forEach(e => {
@@ -329,7 +393,7 @@ const navIO = new IntersectionObserver((entries) => {
       if (link) link.classList.add('active');
     }
   });
-}, { threshold: 0.35 });
+}, { threshold: 0.25 });
 sections.forEach(s => navIO.observe(s));
 
 /* =========================================================
@@ -351,7 +415,7 @@ const io = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal, .stagger-reveal').forEach(el => io.observe(el));
 
 /* =========================================================
-   6. GLOW SPOTLIGHT COM INTERPOLAÇÃO (BENTO, SERVICES & CARDS)
+   6. GLOW SPOTLIGHT NOS CARDS (BENTO, CASES, SERVICES)
    ========================================================= */
 document.querySelectorAll('.glow-card').forEach(card => {
   card.addEventListener('mousemove', e => {
@@ -366,7 +430,7 @@ document.querySelectorAll('.glow-card').forEach(card => {
 /* =========================================================
    7. TILT 3D COM AMORTECIMENTO SUAVE (SMOOTH PARALLAX)
    ========================================================= */
-document.querySelectorAll('.service-card, .bento-card').forEach(card => {
+document.querySelectorAll('.service-card, .bento-card, .case-card').forEach(card => {
   const btn = card.querySelector('.discover');
   if (btn) {
     btn.addEventListener('click', (e) => {
@@ -379,7 +443,7 @@ document.querySelectorAll('.service-card, .bento-card').forEach(card => {
     const r = card.getBoundingClientRect();
     const px = (e.clientX - r.left) / r.width - 0.5;
     const py = (e.clientY - r.top) / r.height - 0.5;
-    card.style.transform = `perspective(900px) rotateY(${px * 6}deg) rotateX(${-py * 6}deg) translateY(-6px)`;
+    card.style.transform = `perspective(900px) rotateY(${px * 5}deg) rotateX(${-py * 5}deg) translateY(-4px)`;
   });
 
   card.addEventListener('mouseleave', () => {

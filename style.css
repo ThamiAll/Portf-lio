@@ -86,7 +86,7 @@ body{
   100%{ left:135%; }
 }
 
-/* ---------- navbar com perfil atualizado (avatar foto de rosto) ---------- */
+/* ---------- navbar com perfil ---------- */
 header.nav{
   position:sticky; top:0; z-index:60; display:flex; align-items:center; justify-content:space-between;
   padding:14px 5vw; background:rgba(7,7,10,0.82); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
@@ -99,8 +99,8 @@ header.nav{
   height:40px;
   border-radius:50%;
   object-fit:cover;
-  object-position:center 20%; /* Foco perfeito no rosto */
-  filter:grayscale(100%) contrast(1.25) brightness(1.05); /* Mantém o mesmo filtro P&B nítido */
+  object-position:center 20%;
+  filter:grayscale(100%) contrast(1.25) brightness(1.05);
   border:1.5px solid rgba(255,255,255,0.18);
   box-shadow:0 0 14px rgba(155,77,255,0.25);
   transition:all .35s var(--ease-elastic);
@@ -115,7 +115,7 @@ header.nav{
 .profile-name{ font-family:var(--font-display); font-weight:700; font-size:0.95rem; color:var(--ink); letter-spacing:-0.01em; }
 .profile-role{ font-family:var(--font-body); font-size:0.75rem; color:var(--ink-dim); font-weight:500; margin-top:2px; }
 
-nav.links{ display:flex; gap:2vw; }
+nav.links{ display:flex; gap:1.8vw; }
 nav.links a{
   position:relative;
   text-decoration:none; color:var(--ink-dim); font-size:0.86rem; font-weight:500;
@@ -205,7 +205,7 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
   color:#ffffff;
 }
 
-/* Efeito fiel à foto: branco puro no início e degradê Lilás/Rosa no final */
+/* Efeito fiel: branco puro no início e degradê Lilás/Rosa no final */
 .hero-title-grad{
   background:linear-gradient(90deg, #ffffff 0%, #ffffff 42%, #c4b5fd 62%, #a855f7 78%, #ec4899 96%);
   -webkit-background-clip:text;
@@ -291,7 +291,7 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
 .hotspot .card p{ font-size:0.8rem; color:var(--ink-dim); line-height:1.55; }
 @media(max-width:900px){ .hero{ grid-template-columns:1fr; } .hero-visual-wrap{ height:46vh; order:-1; } }
 
-/* ---------- bento grid com microinterações ---------- */
+/* ---------- bento grid ---------- */
 .bento-section{ padding:8vh 5vw 12vh; }
 .section-head{ margin-bottom:6vh; }
 .section-head h2{ font-family:var(--font-display); font-weight:800; font-size:clamp(1.8rem,3.2vw,2.8rem); max-width:20ch; line-height:1.15; }
@@ -338,6 +338,247 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
 }
 .badge-mini:hover{ transform:translateY(-3px) scale(1.05); border-color:var(--c3); background:rgba(255,255,255,0.08); }
 @media(max-width:960px){ .bento-grid{ grid-template-columns:1fr; } .bento-wide{ grid-column:span 1; } }
+
+/* ---------- NOVO CASE STUDY: REVOLUT OBSIDIAN ---------- */
+.case-study-section {
+  padding: 10vh 5vw 12vh;
+  border-top: 1px solid var(--line);
+  position: relative;
+}
+
+.case-header {
+  max-width: 850px;
+  margin-bottom: 7vh;
+}
+
+.case-header h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.8vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 16px;
+  color: var(--ink);
+}
+
+.case-subtitle {
+  color: var(--ink-dim);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.25fr;
+  gap: 5vw;
+  align-items: start;
+}
+
+/* Coluna Sticky com Cartão */
+.case-sticky-card {
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-media-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 28px;
+  overflow: hidden;
+  background: #030305;
+  border: 1px solid var(--line-high);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-shadow: 0 35px 90px -25px rgba(155, 77, 255, 0.35);
+}
+
+.card-img-preview {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.9));
+  transition: transform 0.6s var(--ease-elastic);
+}
+
+.case-sticky-card:hover .card-img-preview {
+  transform: scale(1.05);
+}
+
+.card-bottom-pill {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--ink);
+  background: rgba(7, 7, 10, 0.85);
+  border: 1px solid var(--line-high);
+  backdrop-filter: blur(12px);
+  padding: 8px 14px;
+  border-radius: 999px;
+}
+
+.case-quick-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.stat-box {
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--line);
+}
+
+.stat-box .stat-lbl {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--ink-dim);
+  text-transform: uppercase;
+}
+
+.stat-box .stat-val {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--ink);
+  margin-top: 4px;
+}
+
+.stat-box .stat-green {
+  color: var(--ok);
+}
+
+/* Coluna de Conteúdo do Case */
+.case-content-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.case-card {
+  padding: 32px 28px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.018);
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform .4s var(--ease-smooth), border-color .35s ease, box-shadow .35s ease;
+}
+.case-card:hover {
+  border-color: rgba(155,77,255,0.6);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 45px -12px rgba(155,77,255,0.3);
+}
+
+.case-card-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--c3);
+  letter-spacing: 0.08em;
+}
+
+.case-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.case-card p {
+  color: var(--ink-dim);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.case-card p strong {
+  color: var(--ink);
+}
+
+.feature-item {
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.feature-item strong {
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.feature-item span {
+  font-size: 0.85rem;
+  color: var(--ink-dim);
+  line-height: 1.55;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.metric-item {
+  padding: 18px 12px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid var(--line);
+  text-align: center;
+}
+
+.metric-item .num {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--ok);
+  display: block;
+}
+
+.metric-item .label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--ink-dim);
+  margin-top: 4px;
+  display: block;
+}
+
+.case-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 8px;
+}
+
+@media (max-width: 960px) {
+  .case-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .case-sticky-card {
+    position: static;
+  }
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* ---------- about (Card Vertical com Foto) ---------- */
 .about{

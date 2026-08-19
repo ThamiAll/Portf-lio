@@ -17,7 +17,7 @@
 <div class="cur-ring" id="curRing"></div>
 <div class="progress" id="progress"></div>
 
-<!-- Header com Foto Atualizada da Apresentação, Navegação, Seletor de Idioma e CTA -->
+<!-- Header com Perfil, Navegação, Seletor de Idioma e CTA -->
 <header class="nav">
   <div class="nav-profile hoverable magnetic">
     <img src="assets/about-photo.jpg" alt="Thamires Alves" class="profile-avatar">
@@ -30,6 +30,7 @@
   <nav class="links" id="navLinks">
     <a href="#home" class="active" data-i18n="nav_home">Home</a>
     <a href="#bento" data-i18n="nav_bento">Overview</a>
+    <a href="#case-obsidian" data-i18n="nav_case">Cases</a>
     <a href="#about" data-i18n="nav_about">About</a>
     <a href="#services" data-i18n="nav_services">Services</a>
     <a href="#process" data-i18n="nav_process">Process</a>
@@ -82,8 +83,8 @@
       <a class="btn-primary hoverable magnetic btn-shimmer" href="#contact">
         <span data-i18n="hero_cta_main">START A CONVERSATION</span> <span class="btn-arrow">→</span>
       </a>
-      <a class="btn-secondary hoverable magnetic" href="#bento" data-i18n="hero_cta_sec">
-        EXPLORE MATRIX
+      <a class="btn-secondary hoverable magnetic" href="#case-obsidian" data-i18n="hero_cta_sec">
+        EXPLORE CASES
       </a>
     </div>
   </div>
@@ -151,7 +152,7 @@
       </div>
       <div class="bento-footer-stat">
         <span class="stat-num">02</span>
-        <span class="stat-lbl" data-i18n="bento_card1_stat">Devs em Liderança Técnica</span>
+        <span class="stat-lbl" data-i18n="bento_card1_stat">Engineers in Tech Leadership</span>
       </div>
     </div>
 
@@ -181,6 +182,115 @@
         <span class="badge-mini hoverable">NOTION</span>
         <span class="badge-mini hoverable">SCRUM</span>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- NOVO CASE STUDY: REVOLUT OBSIDIAN -->
+<section class="case-study-section" id="case-obsidian">
+  <div class="case-header reveal">
+    <div class="kicker-tag" data-i18n="case_kicker">[ CONCEPT_PRODUCT // FINTECH & WEALTH ]</div>
+    <h2 data-i18n="case_title">Revolut Obsidian — The Next-Gen Private Wealth Experience</h2>
+    <p class="case-subtitle" data-i18n="case_subtitle">
+      Concepção de produto, UX e viabilidade técnica para a expansão do segmento Ultra-High-End, integrando automação cambial preditiva e tokenização de cartões em tempo real.
+    </p>
+  </div>
+
+  <div class="case-grid">
+    <!-- Coluna Esquerda: Visual Sticky do Cartão -->
+    <div class="case-visual-col reveal">
+      <div class="case-sticky-card glow-card">
+        <div class="card-media-wrapper">
+          <div class="grid-overlay"></div>
+          <div class="scanlines"></div>
+          <img src="assets/revolut-obsidian.png" alt="Revolut Obsidian Card Preview" class="card-img-preview">
+          <div class="card-bottom-pill">
+            <span class="status-dot"></span>
+            <span>STATUS: PROTOTYPE_READY // v1.4.0</span>
+          </div>
+        </div>
+        <div class="case-quick-stats">
+          <div class="stat-box">
+            <span class="stat-lbl" data-i18n="case_stat1_lbl">Time-to-Transaction</span>
+            <span class="stat-val">&lt; 60s</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-lbl" data-i18n="case_stat2_lbl">Est. TPV Lift</span>
+            <span class="stat-val stat-green">+35%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coluna Direita: Fluxo do Case Study -->
+    <div class="case-content-col stagger-reveal">
+
+      <!-- Bloco 1: Discovery -->
+      <div class="case-card glow-card hoverable">
+        <div class="case-card-tag">[ 01 // DISCOVERY ]</div>
+        <h3 data-i18n="case_d1_title">Problem Framing & Contexto</h3>
+        <p><strong data-i18n="case_d1_sub1">Contexto de Mercado:</strong> <span data-i18n="case_d1_txt1">Clientes de alta renda e investidores globais enfrentam atrito ao gerenciar múltiplos ativos cambiais em interfaces convencionais com excesso de ruído e lentidão na entrega do cartão físico.</span></p>
+        <p><strong data-i18n="case_d1_sub2">A Oportunidade:</strong> <span data-i18n="case_d1_txt2">Criar uma camada de produto ultra-exclusiva (Obsidian) com interface minimalista, eliminação de atrito operacional e foco em liquidez instantânea.</span></p>
+        <p><strong data-i18n="case_d1_sub3">Stakeholders & Escopo:</strong> <span data-i18n="case_d1_txt3">Alinhamento entre regras de negócio de câmbio (FX), compliance antifraude e arquitetura mobile nativa.</span></p>
+      </div>
+
+      <!-- Bloco 2: Features -->
+      <div class="case-card glow-card hoverable">
+        <div class="case-card-tag">[ 02 // STRATEGY & UX ]</div>
+        <h3 data-i18n="case_d2_title">Core Product Features</h3>
+        <div class="feature-item">
+          <strong data-i18n="case_f1_title">Predictive Multi-Currency Engine (IA de Câmbio)</strong>
+          <span data-i18n="case_f1_desc">Monitoramento contínuo de janelas cambiais favoráveis com conversão automática via regras de hedging.</span>
+        </div>
+        <div class="feature-item">
+          <strong data-i18n="case_f2_title">Dynamic Virtual Issuance</strong>
+          <span data-i18n="case_f2_desc">Emissão instantânea de cartões virtuais com tokenização direta no Apple/Google Wallet antes do envio do cartão físico.</span>
+        </div>
+        <div class="feature-item">
+          <strong data-i18n="case_f3_title">Zen Wealth Interface</strong>
+          <span data-i18n="case_f3_desc">Modo de visualização limpo, sem distrações comerciais, focado em patrimônio líquido consolidado em tempo real.</span>
+        </div>
+      </div>
+
+      <!-- Bloco 3: Arquitetura & Governança -->
+      <div class="case-card glow-card hoverable">
+        <div class="case-card-tag">[ 03 // ARCHITECTURE & PO GOVERNANCE ]</div>
+        <h3 data-i18n="case_d3_title">Arquitetura Técnica & Metodologia</h3>
+        <p><strong data-i18n="case_d3_sub1">Frontend / UX:</strong> <span data-i18n="case_d3_txt1">Microinterações a 60fps, transições fluidas (Next.js & Tailwind CSS) e arquitetura modular.</span></p>
+        <p><strong data-i18n="case_d3_sub2">Backend & APIs:</strong> <span data-i18n="case_d3_txt2">Microsserviços em Python para conciliação contábil, webhooks assíncronos e integração bancária.</span></p>
+        <p><strong data-i18n="case_d3_sub3">Agile Delivery (Jira / Notion):</strong> <span data-i18n="case_d3_txt3">Épicos estruturados em Discovery, Tokenization, Dynamic Limits e Funil VIP, com critérios em formato BDD (Given-When-Then).</span></p>
+      </div>
+
+      <!-- Bloco 4: Métricas -->
+      <div class="case-card glow-card hoverable">
+        <div class="case-card-tag">[ 04 // IMPACT & METRICS ]</div>
+        <h3 data-i18n="case_d4_title">Métricas & Impacto Esperado</h3>
+        <div class="metrics-grid">
+          <div class="metric-item">
+            <span class="num">+28%</span>
+            <span class="label" data-i18n="case_m1_lbl">Waitlist Conversion</span>
+          </div>
+          <div class="metric-item">
+            <span class="num">&lt; 60s</span>
+            <span class="label" data-i18n="case_m2_lbl">Time-to-Transaction</span>
+          </div>
+          <div class="metric-item">
+            <span class="num">+35%</span>
+            <span class="label" data-i18n="case_m3_lbl">TPV Lift / Retenção</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Badges -->
+      <div class="case-badges">
+        <span class="badge-mini hoverable">[ FIGMA ]</span>
+        <span class="badge-mini hoverable">[ PYTHON ]</span>
+        <span class="badge-mini hoverable">[ NEXT.JS ]</span>
+        <span class="badge-mini hoverable">[ REST API ]</span>
+        <span class="badge-mini hoverable">[ SCRUM / JIRA ]</span>
+        <span class="badge-mini hoverable">[ FINTECH UX ]</span>
+      </div>
+
     </div>
   </div>
 </section>
@@ -391,14 +501,15 @@
       <div>
         <strong data-i18n="foot_menu">Menu</strong>
         <span data-i18n="nav_home">Home</span><br>
-        <span data-i18n="nav_about">About</span><br>
         <span data-i18n="nav_bento">Overview</span><br>
-        <span data-i18n="nav_services">Services</span><br>
-        <span data-i18n="nav_process">Process</span>
+        <span data-i18n="nav_case">Cases</span><br>
+        <span data-i18n="nav_about">About</span><br>
+        <span data-i18n="nav_services">Services</span>
       </div>
       <div>
         <strong data-i18n="foot_projects">Projects</strong>
-        Real Estate App<br>
+        Revolut Obsidian<br>
+        RoomMatch<br>
         <span data-i18n="foot_reports">Data & Reports</span>
       </div>
     </div>
