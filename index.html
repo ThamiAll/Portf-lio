@@ -121,7 +121,7 @@
   <div class="watermark">PRODUCT ENGINE</div>
 </div>
 
-<!-- Bento Grid -->
+<!-- Bento Grid / Matriz de Produto Refatorada -->
 <section class="bento-section" id="bento">
   <div class="section-head reveal">
     <div class="kicker-tag" data-i18n="bento_kicker">[ MATRIZ DE PRODUTO ]</div>
@@ -129,45 +129,86 @@
   </div>
 
   <div class="bento-grid stagger-reveal">
-    <div class="bento-card bento-wide glow-card hoverable">
-      <div class="bento-tag" data-i18n="bento_card1_tag">[ PROJETO PRINCIPAL ]</div>
+
+    <!-- CARD 1: FLAGSHIP PROJECT (ROOMMATCH) -->
+    <div class="bento-card bento-wide bento-highlight glow-card hoverable">
+      <div class="bento-header-row">
+        <span class="bento-tag" data-i18n="bento_card1_tag">[ PROJETO PRINCIPAL ]</span>
+        <a href="#agile-governance" class="bento-action-link hoverable magnetic">
+          <span data-i18n="bento_card1_link">[ EXPLORAR CASE ↗ ]</span>
+        </a>
+      </div>
+
       <div class="bento-content">
         <h3 data-i18n="bento_card1_title">RoomMatch — App de Matching para Moradia</h3>
-        <p data-i18n="bento_card1_desc">Liderança de ponta a ponta como Product Owner, alinhando discovery de usuários, priorização de backlog no Jira e direcionamento de uma equipe de 2 desenvolvedores.</p>
+        <p data-i18n="bento_card1_desc">
+          Liderança de ponta a ponta como Product Owner, alinhando discovery de usuários, priorização de backlog no Jira e direcionamento de uma equipe de 2 desenvolvedores.
+        </p>
       </div>
+
       <div class="bento-footer-stat">
         <span class="stat-num">02</span>
         <span class="stat-lbl" data-i18n="bento_card1_stat">Devs em Liderança Técnica</span>
       </div>
     </div>
 
+    <!-- CARD 2: TECH STACK (PYTHON & BACKEND) -->
     <div class="bento-card glow-card hoverable">
-      <div class="bento-tag">[ TECH STACK ]</div>
-      <h3 data-i18n="bento_card2_title">Python & Back-end</h3>
-      <p data-i18n="bento_card2_desc">Compreensão profunda da lógica de servidores e APIs, permitindo estimativas de esforço realistas e arquitetura escalável.</p>
-      <div class="tech-pill">PYTHON BACK-END</div>
+      <div class="bento-header-row">
+        <span class="bento-tag" data-i18n="bento_card2_tag">[ TECH STACK ]</span>
+      </div>
+      <div class="bento-content">
+        <h3 data-i18n="bento_card2_title">Python & Back-end</h3>
+        <p data-i18n="bento_card2_desc">
+          Compreensão profunda da lógica de servidores e APIs, permitindo estimativas de esforço realistas e arquitetura escalável.
+        </p>
+      </div>
+      <div class="tech-pill-wrap">
+        <span class="bento-pill" data-i18n="bento_card2_pill">PYTHON BACK-END</span>
+      </div>
     </div>
 
+    <!-- CARD 3: DATA DRIVEN (PESQUISA & MÉTRICAS) -->
     <div class="bento-card glow-card hoverable">
-      <div class="bento-tag">[ DATA DRIVEN ]</div>
-      <h3 data-i18n="bento_card3_title">Pesquisa & Métricas</h3>
-      <p data-i18n="bento_card3_desc">Validação de hipóteses antes do desenvolvimento para evitar retrabalho de engenharia e maximizar a retenção.</p>
-      <div class="tech-pill">DATA ANALYSIS</div>
+      <div class="bento-header-row">
+        <span class="bento-tag" data-i18n="bento_card3_tag">[ DATA DRIVEN ]</span>
+      </div>
+      <div class="bento-content">
+        <h3 data-i18n="bento_card3_title">Pesquisa & Métricas</h3>
+        <p data-i18n="bento_card3_desc">
+          Validação de hipóteses antes do desenvolvimento para evitar retrabalho de engenharia e maximizar a retenção.
+        </p>
+      </div>
+      <div class="tech-pill-wrap">
+        <span class="bento-pill" data-i18n="bento_card3_pill">DATA ANALYSIS</span>
+      </div>
     </div>
 
+    <!-- CARD 4: GOVERNANÇA & PROCESSOS (AGILE DENSITY) -->
     <div class="bento-card bento-wide glow-card hoverable">
-      <div class="bento-tag" data-i18n="bento_card4_tag">[ GOVERNANÇA & PROCESSOS ]</div>
+      <div class="bento-header-row">
+        <span class="bento-tag" data-i18n="bento_card4_tag">[ GOVERNANÇA & PROCESSOS ]</span>
+      </div>
+
       <div class="bento-content">
         <h3 data-i18n="bento_card4_title">Alinhamento entre Negócio, Design e Código</h3>
-        <p data-i18n="bento_card4_desc">Gestão ágil de sprints, escrita de critérios de aceite detalhados e documentação robusta em Notion e Jira para garantir entregas pontuais e consistentes.</p>
+        <p data-i18n="bento_card4_desc">
+          Gestão ágil de sprints, escrita de critérios de aceite detalhados e documentação robusta em Notion e Jira para garantir entregas pontuais e consistentes.
+        </p>
       </div>
+
+      <div class="agile-density-line font-mono" data-i18n="bento_card4_metrics">
+        7 Sprints Estruturadas • 178 Story Points • Estimativa Fibonacci
+      </div>
+
       <div class="tech-row">
-        <span class="badge-mini hoverable">JIRA</span>
-        <span class="badge-mini hoverable">FIGMA</span>
-        <span class="badge-mini hoverable">NOTION</span>
-        <span class="badge-mini hoverable">SCRUM</span>
+        <span class="bento-pill hoverable">JIRA</span>
+        <span class="bento-pill hoverable">FIGMA</span>
+        <span class="bento-pill hoverable">NOTION</span>
+        <span class="bento-pill hoverable">SCRUM</span>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -279,7 +320,7 @@
   </div>
 </section>
 
-<!-- SEÇÃO NOVA: AGILE GOVERNANCE & PO CASE STUDY (ROOMMATCH) -->
+<!-- SEÇÃO: AGILE GOVERNANCE & PO CASE STUDY (ROOMMATCH) -->
 <section class="agile-section" id="agile-governance">
   <div class="agile-header reveal">
     <div class="kicker-tag" data-i18n="agile_kicker">[ AGILE_GOVERNANCE // ENGINEERING COLLABORATION ]</div>
@@ -364,9 +405,7 @@
         </div>
       </div>
 
-      <div class="kanban-tasks-list" id="kanbanTasksList">
-        <!-- Itens inseridos e controlados via JavaScript -->
-      </div>
+      <div class="kanban-tasks-list" id="kanbanTasksList"></div>
 
       <div class="card-footer-note">
         <span data-i18n="agile_scope_note">ESCOPO DA SPRINT 1: 23 PTS</span>

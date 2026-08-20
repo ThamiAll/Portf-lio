@@ -25,16 +25,22 @@ const translations = {
     bento_kicker: "[ MATRIZ DE PRODUTO ]",
     bento_heading: "Visão 360° em Produto, Engenharia e Gestão",
     bento_card1_tag: "[ PROJETO PRINCIPAL ]",
+    bento_card1_link: "[ EXPLORAR CASE ↗ ]",
     bento_card1_title: "RoomMatch — App de Matching para Moradia",
     bento_card1_desc: "Liderança de ponta a ponta como Product Owner, alinhando discovery de usuários, priorização de backlog no Jira e direcionamento de uma equipe de 2 desenvolvedores.",
     bento_card1_stat: "Devs em Liderança Técnica",
+    bento_card2_tag: "[ TECH STACK ]",
     bento_card2_title: "Python & Back-end",
     bento_card2_desc: "Compreensão profunda da lógica de servidores e APIs, permitindo estimativas de esforço realistas e arquitetura escalável.",
+    bento_card2_pill: "PYTHON BACK-END",
+    bento_card3_tag: "[ DATA DRIVEN ]",
     bento_card3_title: "Pesquisa & Métricas",
     bento_card3_desc: "Validação de hipóteses antes do desenvolvimento para evitar retrabalho de engenharia e maximizar a retenção.",
+    bento_card3_pill: "DATA ANALYSIS",
     bento_card4_tag: "[ GOVERNANÇA & PROCESSOS ]",
     bento_card4_title: "Alinhamento entre Negócio, Design e Código",
     bento_card4_desc: "Gestão ágil de sprints, escrita de critérios de aceite detalhados e documentação robusta em Notion e Jira para garantir entregas pontuais e consistentes.",
+    bento_card4_metrics: "7 Sprints Estruturadas • 178 Story Points • Estimativa Fibonacci",
 
     case_kicker: "[ CONCEPT_PRODUCT // FINTECH & WEALTH ]",
     case_title: "Revolut Obsidian — The Next-Gen Private Wealth Experience",
@@ -166,7 +172,7 @@ const translations = {
     tip_jira: "Jira — Gestão ágil de sprints e backlog do projeto imobiliário.",
     tip_notion: "Notion — Documentação de regras de negócio e processos.",
     tip_claude: "Claude AI — Raciocínio avançado, engenharia de prompt e documentação.",
-    tip_gemini: "Gemini AI — Análise multimodal de produto, pesquisa e ideação.",
+    tip_gemini: "Gemini AI — Multimodal product analysis, research & ideation.",
     tip_gpt: "ChatGPT — Automação de fluxos, revisão de código e prototipação rápida.",
 
     contact_kicker: "[ FALE COMIGO ]",
@@ -209,16 +215,22 @@ const translations = {
     bento_kicker: "[ PRODUCT MATRIX ]",
     bento_heading: "360° Vision across Product, Tech & Governance",
     bento_card1_tag: "[ FLAGSHIP PROJECT ]",
+    bento_card1_link: "[ EXPLORE CASE ↗ ]",
     bento_card1_title: "RoomMatch — Shared Housing Matching App",
     bento_card1_desc: "End-to-end leadership as Product Owner, aligning user discovery, Jira backlog management, and mentoring a team of 2 software engineers.",
     bento_card1_stat: "Engineers in Tech Leadership",
+    bento_card2_tag: "[ TECH STACK ]",
     bento_card2_title: "Python & Back-end",
     bento_card2_desc: "In-depth understanding of backend logic, REST APIs, and architecture to ensure realistic scoping and technical feasibility.",
+    bento_card2_pill: "PYTHON BACK-END",
+    bento_card3_tag: "[ DATA DRIVEN ]",
     bento_card3_title: "Research & Metrics",
     bento_card3_desc: "Continuous hypothesis validation before writing code to prevent technical rework and maximize user retention.",
+    bento_card3_pill: "DATA ANALYSIS",
     bento_card4_tag: "[ GOVERNANCE & PROCESS ]",
     bento_card4_title: "Connecting Business, Design & Clean Code",
     bento_card4_desc: "Agile sprint management, detailed acceptance criteria, and comprehensive documentation in Notion & Jira for predictable deliveries.",
+    bento_card4_metrics: "7 Structured Sprints • 178 Story Points • Fibonacci Estimation",
 
     case_kicker: "[ CONCEPT_PRODUCT // FINTECH & WEALTH ]",
     case_title: "Revolut Obsidian — The Next-Gen Private Wealth Experience",
@@ -659,7 +671,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 document.getElementById('backTop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 document.getElementById('footWord').addEventListener('click', () => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }));
 
-// Inicialização: desacelera o vídeo da hero para 60% e renderiza o kanban
+// Inicialização
 document.addEventListener('DOMContentLoaded', () => {
   const heroVideo = document.getElementById('heroAmbientVideo');
   if (heroVideo) {
