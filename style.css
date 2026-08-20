@@ -7,7 +7,7 @@
   --line-high: rgba(255,255,255,0.15);
   --c1:        #4d6bff;
   --c2:        #9b4dff;
-  --c3:        #ff4fd8;
+  --c3:        #ec4899;
   --c4:        #ff8a4d;
   --ok:        #4dff9e;
 
@@ -42,7 +42,7 @@ body{
 }
 .cur-ring.hover{
   width:60px; height:60px; border-color:var(--c3);
-  background:radial-gradient(circle, rgba(255,79,216,0.18) 0%, transparent 70%);
+  background:radial-gradient(circle, rgba(236,72,153,0.18) 0%, transparent 70%);
 }
 .cur-ring.active{
   transform:translate(-50%,-50%) scale(0.85);
@@ -108,7 +108,7 @@ header.nav{
 .nav-profile:hover .profile-avatar{
   border-color:var(--c3);
   transform:scale(1.1) rotate(4deg);
-  box-shadow:0 0 22px rgba(255,79,216,0.5);
+  box-shadow:0 0 22px rgba(236,72,153,0.5);
 }
 
 .profile-meta{ display:flex; flex-direction:column; line-height:1.2; }
@@ -172,7 +172,7 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
   text-align:left; cursor:pointer; transition:all .2s ease;
 }
 .lang-opt:hover{ color:var(--ink); background:rgba(255,255,255,0.06); transform:translateX(3px); }
-.lang-opt.active{ color:var(--ink); font-weight:700; background:rgba(155,77,255,0.15); border-left:2px solid var(--c3); }
+.lang-opt.active{ color:var(--ink); font-weight:700; background:rgba(236,72,153,0.15); border-left:2px solid var(--c3); }
 
 .nav-cta{
   font-size:0.82rem; font-weight:600; color:var(--bg); background:var(--ink);
@@ -376,7 +376,7 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
   user-select: none;
 }
 
-/* ---------- BENTO GRID REFATORADA (HIGH CONTRAST & DENSITY) ---------- */
+/* ---------- BENTO GRID REFATORADA (MAGENTA ACCENTS) ---------- */
 .bento-section {
   padding: 10vh 5vw 12vh;
   position: relative;
@@ -422,7 +422,7 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(450px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(192, 132, 252, 0.14), transparent 45%);
+  background: radial-gradient(450px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(236, 72, 153, 0.14), transparent 45%);
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.4s ease;
@@ -433,9 +433,9 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
 }
 
 .bento-card:hover {
-  border-color: rgba(192, 132, 252, 0.55);
+  border-color: rgba(236, 72, 153, 0.5);
   transform: translateY(-6px) scale(1.008);
-  box-shadow: 0 24px 50px -15px rgba(192, 132, 252, 0.28);
+  box-shadow: 0 24px 50px -15px rgba(236, 72, 153, 0.25);
   background: rgba(255, 255, 255, 0.045);
 }
 
@@ -444,8 +444,8 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
 }
 
 .bento-highlight {
-  border-top: 1px solid rgba(192, 132, 252, 0.45);
-  background: linear-gradient(180deg, rgba(192, 132, 252, 0.04) 0%, rgba(255, 255, 255, 0.03) 40%);
+  border-top: 1px solid rgba(236, 72, 153, 0.45);
+  background: linear-gradient(180deg, rgba(236, 72, 153, 0.04) 0%, rgba(255, 255, 255, 0.03) 40%);
 }
 
 .bento-header-row {
@@ -467,22 +467,26 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
   display: inline-block;
 }
 
+/* 1. Botões de Ação Superiores em Magenta Vibrante */
 .bento-action-link {
   font-family: var(--font-mono, monospace);
   font-size: 0.72rem;
-  color: rgba(255, 255, 255, 0.75);
+  font-weight: 600;
+  color: #ec4899;
   text-decoration: none;
-  padding: 4px 10px;
+  padding: 5px 12px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.25s ease;
+  background: rgba(236, 72, 153, 0.08);
+  border: 1px solid rgba(236, 72, 153, 0.3);
+  backdrop-filter: blur(6px);
+  transition: all 0.25s var(--ease-smooth);
 }
 
 .bento-action-link:hover {
   color: #ffffff;
-  border-color: #c084fc;
-  background: rgba(192, 132, 252, 0.12);
+  border-color: rgba(236, 72, 153, 0.6);
+  background: rgba(236, 72, 153, 0.2);
+  box-shadow: 0 0 12px rgba(236, 72, 153, 0.4);
   transform: translateX(2px);
 }
 
@@ -535,24 +539,25 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
   margin-top: 24px;
 }
 
+/* 2. Pills Técnicas Inferiores em Magenta Suave com Borda Vibrante */
 .bento-pill {
   display: inline-block;
   font-family: var(--font-mono, monospace);
   font-size: 0.75rem;
   letter-spacing: 0.05em;
-  color: #e5e5e5;
+  color: #fbcfe8;
   padding: 6px 14px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(236, 72, 153, 0.05);
+  border: 1px solid rgba(236, 72, 153, 0.25);
   backdrop-filter: blur(6px);
   transition: all 0.25s ease;
   cursor: default;
 }
 
 .bento-pill:hover {
-  border-color: rgba(192, 132, 252, 0.5);
-  background: rgba(192, 132, 252, 0.12);
+  border-color: rgba(236, 72, 153, 0.5);
+  background: rgba(236, 72, 153, 0.12);
   color: #ffffff;
   transform: translateY(-2px);
 }
@@ -1349,7 +1354,7 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
 }
 .about-photo-card:hover{
   transform:translateY(-6px);
-  border-color:rgba(255,79,216,0.4);
+  border-color:rgba(236,72,153,0.4);
   box-shadow:0 40px 100px -15px rgba(155,77,255,0.5);
 }
 
@@ -1375,7 +1380,7 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
   z-index:1;
   pointer-events:none;
   background:
-    radial-gradient(circle at 80% 15%, rgba(255,79,216,0.15), transparent 45%),
+    radial-gradient(circle at 80% 15%, rgba(236,72,153,0.15), transparent 45%),
     radial-gradient(circle at 20% 85%, rgba(77,107,255,0.2), transparent 50%),
     linear-gradient(180deg, transparent 55%, rgba(7,7,10,0.8) 100%);
 }
@@ -1391,7 +1396,7 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
 }
 .link-btn:hover{
   border-color:var(--c3); transform:translateY(-4px);
-  box-shadow:0 12px 30px -6px rgba(255,79,216,0.4);
+  box-shadow:0 12px 30px -6px rgba(236,72,153,0.4);
   background:rgba(255,255,255,0.03);
 }
 .link-btn .arrow{
@@ -1550,9 +1555,9 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
 
 .client-tile:hover .icon-wrap{
   background:rgba(155,77,255,0.16);
-  border-color:rgba(255,79,216,0.4);
+  border-color:rgba(236,72,153,0.4);
   transform:scale(1.12);
-  box-shadow:0 0 20px rgba(255,79,216,0.3);
+  box-shadow:0 0 20px rgba(236,72,153,0.3);
 }
 
 .client-tile:hover .client-icon{
@@ -1621,7 +1626,7 @@ nav.links a.active::after, nav.links a:hover::after{ width:100%; }
 }
 .submit-btn:hover{
   transform:translateY(-4px) scale(1.01);
-  box-shadow:0 18px 35px -8px rgba(255,79,216,0.45);
+  box-shadow:0 18px 35px -8px rgba(236,72,153,0.45);
 }
 .submit-btn:active{ transform:scale(0.98); }
 .submit-btn.sent{ background:linear-gradient(100deg,var(--ok),#2fd88a); color:#07070a; }
@@ -1647,7 +1652,7 @@ footer{ border-top:1px solid var(--line); padding:8vh 5vw 5vh; }
   padding:10px 22px; font-family:var(--font-mono); font-size:0.7rem; cursor:pointer;
   transition:all .3s var(--ease-elastic);
 }
-.back-top:hover{ color:var(--ink); border-color:var(--c3); transform:translateY(-3px); box-shadow:0 6px 16px -4px rgba(255,79,216,0.3); }
+.back-top:hover{ color:var(--ink); border-color:var(--c3); transform:translateY(-3px); box-shadow:0 6px 16px -4px rgba(236,72,153,0.3); }
 
 /* ---------- utilitários e animações ---------- */
 .liquid{
@@ -1668,8 +1673,8 @@ footer{ border-top:1px solid var(--line); padding:8vh 5vw 5vh; }
 .watermark{ font-family:var(--font-display); font-weight:800; letter-spacing:-0.03em; font-size:clamp(4rem,15vw,13rem); line-height:0.85; color:transparent; -webkit-text-stroke:1px rgba(255,255,255,0.05); white-space:nowrap; user-select:none; }
 
 .frame-tag{ position:absolute; left:18px; bottom:18px; z-index:4; display:flex; align-items:center; gap:8px; font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.08em; color:rgba(255,255,255,0.9); background:rgba(7,7,10,0.7); border:1px solid rgba(255,255,255,0.15); backdrop-filter:blur(10px); padding:8px 14px; border-radius:999px; }
-.frame-tag .status-dot{ background:var(--c3); box-shadow:0 0 0 0 rgba(255,79,216,0.6); animation:pulse2 2s infinite; }
-@keyframes pulse2{ 0%{ box-shadow:0 0 0 0 rgba(255,79,216,0.6);} 70%{ box-shadow:0 0 0 8px rgba(77,255,158,0);} 100%{ box-shadow:0 0 0 0 rgba(255,79,216,0);} }
+.frame-tag .status-dot{ background:var(--c3); box-shadow:0 0 0 0 rgba(236,72,153,0.6); animation:pulse2 2s infinite; }
+@keyframes pulse2{ 0%{ box-shadow:0 0 0 0 rgba(236,72,153,0.6);} 70%{ box-shadow:0 0 0 8px rgba(236,72,153,0);} 100%{ box-shadow:0 0 0 0 rgba(236,72,153,0);} }
 
 .reveal{ opacity:0; transform:translateY(32px); transition:opacity .8s var(--ease-smooth), transform .8s var(--ease-smooth); }
 .reveal.in{ opacity:1; transform:translateY(0); }

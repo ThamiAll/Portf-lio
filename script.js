@@ -123,7 +123,7 @@ const translations = {
     agile_alert_head: "⚠ Alerta Estratégico Detectado:",
     agile_alert_txt: "Identificação antecipada de sobrecarga na Sprint 7 com acúmulo de ~50 story points (200% da capacidade nominal do time).",
     agile_action_head: "✓ Ação de Governança de PO:",
-    agile_action_txt: "Replanejamento dinâmico baseado na Velocity média comprovada nas Sprints 5 e 6, desacoplando o deploy de infraestrutura para uma Sprint 8 de estabilização, prevenindo débito técnico e sobrecarga dos desenvolvedores.",
+    agile_action_txt: "Replanejamento dinâmico baseado na Velocity média comprovada nas Sprints 5 e 6, desacoplando o deploy de infraestrutura para uma <strong>Sprint 8 de estabilização</strong>, prevenindo débito técnico e sobrecarga dos desenvolvedores.",
     agile_burnout_note: "📈 Zero Burnout",
     agile_predict_note: "100% PREDICTABLE DELIVERIES",
 
