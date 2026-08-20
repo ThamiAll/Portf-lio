@@ -17,7 +17,7 @@
 <div class="cur-ring" id="curRing"></div>
 <div class="progress" id="progress"></div>
 
-<!-- Header com Perfil, Navegação, Seletor de Idioma e CTA -->
+<!-- Header com Perfil, Navbar Agrupada (Dropdowns), Seletor de Idioma e CTA -->
 <header class="nav">
   <div class="nav-profile hoverable magnetic">
     <img src="assets/about-photo.jpg" alt="Thamires Alves" class="profile-avatar">
@@ -28,14 +28,55 @@
   </div>
 
   <nav class="links" id="navLinks">
-    <a href="#home" class="active" data-i18n="nav_home">Home</a>
-    <a href="#bento" data-i18n="nav_bento">Visão Geral</a>
-    <a href="#case-obsidian" data-i18n="nav_case">Cases</a>
-    <a href="#agile-governance" data-i18n="nav_agile">Governança</a>
-    <a href="#about" data-i18n="nav_about">Sobre</a>
-    <a href="#services" data-i18n="nav_services">Atuação</a>
-    <a href="#process" data-i18n="nav_process">Processo</a>
-    <a href="#contact" data-i18n="nav_contact">Contato</a>
+    <a href="#home" class="nav-item active hoverable" data-i18n="nav_home">Home</a>
+    <a href="#bento" class="nav-item hoverable" data-i18n="nav_bento">Visão Geral</a>
+
+    <!-- Dropdown A: Cases -->
+    <div class="nav-dropdown-wrapper">
+      <button class="nav-dropdown-trigger hoverable" aria-haspopup="true">
+        <span data-i18n="nav_cases">Cases</span>
+        <span class="nav-chevron">▾</span>
+      </button>
+      <div class="nav-dropdown-menu">
+        <a href="#bento" class="dropdown-item hoverable" id="cases-roommatch">
+          <div class="dropdown-item-title" data-i18n="nav_case_roommatch">RoomMatch</div>
+          <div class="dropdown-item-desc" data-i18n="nav_case_roommatch_desc">App de Matching / PO</div>
+        </a>
+        <a href="#bento" class="dropdown-item hoverable" id="cases-lostfound">
+          <div class="dropdown-item-title" data-i18n="nav_case_lostfound">Campus Lost & Found</div>
+          <div class="dropdown-item-desc" data-i18n="nav_case_lostfound_desc">Python & Back-end</div>
+        </a>
+        <a href="#case-obsidian" class="dropdown-item hoverable" id="cases-revolut">
+          <div class="dropdown-item-title" data-i18n="nav_case_revolut">Revolut Obsidian</div>
+          <div class="dropdown-item-desc" data-i18n="nav_case_revolut_desc">Estratégia de Produto</div>
+        </a>
+        <a href="#agile-governance" class="dropdown-item hoverable" id="cases-governanca">
+          <div class="dropdown-item-title" data-i18n="nav_case_agile">Governança & Ágil</div>
+          <div class="dropdown-item-desc" data-i18n="nav_case_agile_desc">Jira, Métricas & Processos</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Dropdown B: Sobre & Atuação -->
+    <div class="nav-dropdown-wrapper">
+      <button class="nav-dropdown-trigger hoverable" aria-haspopup="true">
+        <span data-i18n="nav_about_group">Sobre & Atuação</span>
+        <span class="nav-chevron">▾</span>
+      </button>
+      <div class="nav-dropdown-menu">
+        <a href="#about" class="dropdown-item hoverable" id="sobre">
+          <div class="dropdown-item-title" data-i18n="nav_about_bio">Minha Trajetória</div>
+          <div class="dropdown-item-desc" data-i18n="nav_about_bio_desc">Bio, Visão & Propósito</div>
+        </a>
+        <a href="#services" class="dropdown-item hoverable" id="atuacao">
+          <div class="dropdown-item-title" data-i18n="nav_about_pillars">Pilares de Atuação</div>
+          <div class="dropdown-item-desc" data-i18n="nav_about_pillars_desc">Engenharia, Produto & Liderança</div>
+        </a>
+      </div>
+    </div>
+
+    <a href="#process" class="nav-item hoverable" data-i18n="nav_process">Processo</a>
+    <a href="#contact" class="nav-item hoverable" data-i18n="nav_contact">Contato</a>
   </nav>
 
   <div class="nav-right">
@@ -232,7 +273,6 @@
       Concepção de produto, UX e viabilidade técnica para a expansão do segmento Ultra-High-End, integrando automação cambial preditiva e tokenização de cartões em tempo real.
     </p>
 
-    <!-- Disclaimer -->
     <div class="case-disclaimer-box">
       <span class="disclaimer-tag" data-i18n="case_disc_tag">[ DISCLAIMER // ESTUDO CONCEITUAL ]</span>
       <p data-i18n="case_disc_text">

@@ -6,10 +6,20 @@ const translations = {
     nav_role: "Product Engineer & PO",
     nav_home: "Home",
     nav_bento: "Visão Geral",
-    nav_case: "Cases",
-    nav_agile: "Governança",
-    nav_about: "Sobre",
-    nav_services: "Atuação",
+    nav_cases: "Cases",
+    nav_case_roommatch: "RoomMatch",
+    nav_case_roommatch_desc: "App de Matching / PO",
+    nav_case_lostfound: "Campus Lost & Found",
+    nav_case_lostfound_desc: "Python & Back-end",
+    nav_case_revolut: "Revolut Obsidian",
+    nav_case_revolut_desc: "Estratégia de Produto",
+    nav_case_agile: "Governança & Ágil",
+    nav_case_agile_desc: "Jira, Métricas & Processos",
+    nav_about_group: "Sobre & Atuação",
+    nav_about_bio: "Minha Trajetória",
+    nav_about_bio_desc: "Bio, Visão & Propósito",
+    nav_about_pillars: "Pilares de Atuação",
+    nav_about_pillars_desc: "Engenharia, Produto & Liderança",
     nav_process: "Processo",
     nav_contact: "Contato",
     nav_status: "DISPONÍVEL",
@@ -196,10 +206,20 @@ const translations = {
     nav_role: "Product Engineer & PO",
     nav_home: "Home",
     nav_bento: "Overview",
-    nav_case: "Cases",
-    nav_agile: "Governance",
-    nav_about: "About",
-    nav_services: "Services",
+    nav_cases: "Cases",
+    nav_case_roommatch: "RoomMatch",
+    nav_case_roommatch_desc: "Matching App / PO",
+    nav_case_lostfound: "Campus Lost & Found",
+    nav_case_lostfound_desc: "Python & Back-end",
+    nav_case_revolut: "Revolut Obsidian",
+    nav_case_revolut_desc: "Product Strategy",
+    nav_case_agile: "Governance & Agile",
+    nav_case_agile_desc: "Jira, Metrics & Processes",
+    nav_about_group: "About & Focus",
+    nav_about_bio: "My Journey",
+    nav_about_bio_desc: "Bio, Vision & Purpose",
+    nav_about_pillars: "Core Pillars",
+    nav_about_pillars_desc: "Engineering, Product & Leadership",
     nav_process: "Process",
     nav_contact: "Contact",
     nav_status: "AVAILABLE",
@@ -536,7 +556,7 @@ function renderLoop() {
 }
 renderLoop();
 
-document.querySelectorAll('.hoverable, a, button, input, textarea, .hotspot, .client-tile, .bento-card, .service-card, .case-card, .agile-card').forEach(el => {
+document.querySelectorAll('.hoverable, a, button, input, textarea, .hotspot, .client-tile, .bento-card, .service-card, .case-card, .agile-card, .dropdown-item').forEach(el => {
   el.addEventListener('mouseenter', () => ring.classList.add('hover'));
   el.addEventListener('mouseleave', () => ring.classList.remove('hover'));
 });
@@ -568,13 +588,13 @@ window.addEventListener('scroll', () => {
 });
 
 const sections = ['home', 'bento', 'case-obsidian', 'agile-governance', 'about', 'services', 'process', 'contact'].map(id => document.getElementById(id)).filter(Boolean);
-const navA = document.querySelectorAll('#navLinks a');
+const navA = document.querySelectorAll('#navLinks .nav-item');
 const navIO = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
       navA.forEach(a => a.classList.remove('active'));
-      const link = document.querySelector('#navLinks a[href="#' + e.target.id + '"]');
-      if (link) link.classList.add('active');
+      const link = document.querySelector(`#navLinks a[href="#${e.target.id}"]`);
+      if (link && link.classList.contains('nav-item')) link.classList.add('active');
     }
   });
 }, { threshold: 0.25 });
