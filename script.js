@@ -182,7 +182,7 @@ const translations = {
     tip_jira: "Jira — Gestão ágil de sprints e backlog do projeto imobiliário.",
     tip_notion: "Notion — Documentação de regras de negócio e processos.",
     tip_claude: "Claude AI — Raciocínio avançado, engenharia de prompt e documentação.",
-    tip_gemini: "Gemini AI — Multimodal product analysis, research & ideation.",
+    tip_gemini: "Gemini AI — Análise multimodal de produto, pesquisa e ideação.",
     tip_gpt: "ChatGPT — Automação de fluxos, revisão de código e prototipação rápida.",
 
     contact_kicker: "[ FALE COMIGO ]",
