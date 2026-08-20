@@ -687,6 +687,55 @@ nav.links{ display:flex; align-items:center; gap:1.8vw; }
   }
 }
 
+/* ---------- TECH STACK MARQUEE (CARROSSEL INFINITO) ---------- */
+.marquee-section {
+  position: relative;
+  width: 100%;
+  padding: 6vh 0;
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.marquee-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  mask-image: linear-gradient(90deg, transparent, #000 15%, #000 85%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 15%, #000 85%, transparent);
+}
+
+.tools-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: marqueeScroll 28s linear infinite;
+  will-change: transform;
+}
+
+.marquee-container:hover .tools-track {
+  animation-play-state: paused;
+}
+
+.tools-track .tech-pill-tag {
+  white-space: nowrap;
+  font-size: 0.8rem;
+  padding: 10px 18px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 /* ---------- CASE STUDY: REVOLUT OBSIDIAN ---------- */
 .case-study-section {
   padding: 10vh 5vw 12vh;

@@ -342,7 +342,7 @@ const translations = {
     about_kicker: "[ ABOUT ME ]",
     about_heading: "Bridging the gap between business vision, clean code & design",
     about_p1: "Hi, I'm Thamires Alves! I am driven by the curiosity to transform complex ideas into intuitive, beautiful, and enjoyable digital products. My background combines the analytical and investigative mindset of Computational Chemistry with the practical execution of IT Management — allowing me to navigate seamlessly between business rules, code, and design.",
-    about_p2: "Today, I serve as Product Owner (PO) for a real real estate platform, running Scrum side by side with a talented team of full-stack engineers. Beyond management, I get hands-on with UI/UX Design prototyping in Figma, collaborate with front-end code, and leverage Python, Next.js, CSS, Jira, Notion, and AI workflows (Claude & Gemini) to accelerate deliveries and craft digital experiences that genuinely solve real-world problems.",
+    about_p2: "Today, I serve as Product Owner (PO) for a real estate platform, running Scrum side by side with a talented team of full-stack engineers. Beyond management, I get hands-on with UI/UX Design prototyping in Figma, collaborate with front-end code, and leverage Python, Next.js, CSS, Jira, Notion, and AI workflows (Claude & Gemini) to accelerate deliveries and craft digital experiences that genuinely solve real-world problems.",
     about_btn: "EXPLORE SERVICES",
 
     services_kicker: "[ WHAT I DO ]",
