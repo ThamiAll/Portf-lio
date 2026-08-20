@@ -15,16 +15,11 @@ const translations = {
     nav_cta: "Vamos Conversar",
 
     hero_kicker: "[ PRODUCT & TECH ]",
-    hero_title_1: "ESTRATÉGIA",
-    hero_title_2: "DE PRODUTO",
+    hero_title_1: "ESTRATÉGIA DE PRODUTO",
     hero_title_3: "& ENGENHARIA.",
     hero_desc: "Transformo problemas complexos de negócios em experiências digitais claras. Uno a visão estratégica de Product Owner com base técnica em Python e pesquisa orientada a dados.",
     hero_cta_main: "INICIAR CONVERSA",
     hero_cta_sec: "VER CASES",
-
-    hotspot_1: "RoomMatch — app de matching para moradia compartilhada com time técnico dedicado.",
-    hotspot_2: "Decisões guiadas por comportamento e métricas reais de engajamento.",
-    hotspot_3: "Base em Python para diálogo fluido e realista de arquitetura com engenharia.",
 
     bento_kicker: "[ MATRIZ DE PRODUTO ]",
     bento_heading: "Visão 360° em Produto, Engenharia e Gestão",
@@ -156,16 +151,11 @@ const translations = {
     nav_cta: "Let's Talk",
 
     hero_kicker: "[ PRODUCT & TECH ]",
-    hero_title_1: "PRODUCT",
-    hero_title_2: "STRATEGY &",
-    hero_title_3: "ENGINEERING.",
+    hero_title_1: "PRODUCT STRATEGY",
+    hero_title_3: "& ENGINEERING.",
     hero_desc: "Transforming complex business challenges into seamless digital experiences. Combining strategic Product Ownership with solid Python foundations and data-driven UX.",
     hero_cta_main: "START A CONVERSATION",
     hero_cta_sec: "EXPLORE CASES",
-
-    hotspot_1: "RoomMatch — roommate matching app built alongside a dedicated engineering team.",
-    hotspot_2: "Product decisions backed by telemetry, research, and real user behavior.",
-    hotspot_3: "Hands-on Python expertise enabling deep architectural alignment with dev teams.",
 
     bento_kicker: "[ PRODUCT MATRIX ]",
     bento_heading: "360° Vision across Product, Tech & Governance",
@@ -292,7 +282,6 @@ function applyLanguage(lang) {
   document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
   document.getElementById('currentLangLabel').textContent = lang.toUpperCase();
 
-  // Atualiza todos os textos com data-i18n
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (translations[lang] && translations[lang][key]) {
@@ -300,7 +289,6 @@ function applyLanguage(lang) {
     }
   });
 
-  // Atualiza placeholders dos inputs
   document.querySelectorAll('[data-i18n-ph]').forEach(el => {
     const key = el.getAttribute('data-i18n-ph');
     if (translations[lang] && translations[lang][key]) {
@@ -308,7 +296,6 @@ function applyLanguage(lang) {
     }
   });
 
-  // Atualiza botões do dropdown
   document.querySelectorAll('.lang-opt').forEach(btn => {
     btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
   });
@@ -468,28 +455,9 @@ document.querySelectorAll('.service-card, .bento-card, .case-card').forEach(card
   });
 });
 
-const heroGlitch = document.getElementById('heroGlitch');
-if (heroGlitch) {
-  heroGlitch.addEventListener('mousemove', e => {
-    const r = heroGlitch.getBoundingClientRect();
-    const px = (e.clientX - r.left) / r.width - 0.5;
-    const py = (e.clientY - r.top) / r.height - 0.5;
-    heroGlitch.style.transform = `perspective(900px) rotateY(${px * 6}deg) rotateX(${-py * 6}deg)`;
-  });
-  heroGlitch.addEventListener('mouseleave', () => {
-    heroGlitch.style.transform = '';
-  });
-}
-
 /* =========================================================
-   8. HOTSPOTS & ACCORDION DO PROCESSO
+   8. ACCORDION DO PROCESSO
    ========================================================= */
-document.querySelectorAll('.hotspot').forEach(h => {
-  h.addEventListener('mouseenter', () => h.classList.add('open'));
-  h.addEventListener('mouseleave', () => h.classList.remove('open'));
-  h.addEventListener('click', () => h.classList.toggle('open'));
-});
-
 document.querySelectorAll('[data-step]').forEach(row => {
   row.addEventListener('click', () => {
     const wasOpen = row.classList.contains('open');
@@ -522,3 +490,11 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 
 document.getElementById('backTop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 document.getElementById('footWord').addEventListener('click', () => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }));
+
+// Desacelera o vídeo de fundo da Hero para 60% para movimentação ambiente suave
+document.addEventListener('DOMContentLoaded', () => {
+  const heroVideo = document.getElementById('heroAmbientVideo');
+  if (heroVideo) {
+    heroVideo.playbackRate = 0.6;
+  }
+});

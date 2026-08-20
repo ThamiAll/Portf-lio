@@ -64,69 +64,51 @@
   </div>
 </header>
 
-<!-- Hero Section -->
-<section class="hero" id="home">
-  <div class="hero-text reveal">
+<!-- Hero Section Full-Bleed (Com Vídeo em Tela Cheia e Gradiente Refinado) -->
+<section class="hero-fullscreen" id="home">
+  <video
+    id="heroAmbientVideo"
+    class="hero-bg-video"
+    autoplay
+    loop
+    muted
+    playsinline
+    poster="assets/hero-bg.jpg"
+  >
+    <source src="assets/hero-video.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-bg-overlay"></div>
+  <div class="hero-grid-pattern"></div>
+
+  <div class="hero-content reveal">
     <div class="kicker-tag" data-i18n="hero_kicker">[ PRODUCT & TECH ]</div>
 
-    <h1 class="hero-title">
-      <span class="title-line" data-i18n="hero_title_1">ESTRATÉGIA</span>
-      <span class="title-line" data-i18n="hero_title_2">DE PRODUTO</span>
-      <span class="title-line hero-title-grad" data-i18n="hero_title_3">& ENGENHARIA.</span>
+    <h1 class="hero-main-heading">
+      <span data-i18n="hero_title_1">ESTRATÉGIA DE PRODUTO</span><br>
+      <span class="hero-title-grad" data-i18n="hero_title_3">& ENGENHARIA.</span>
     </h1>
 
-    <p class="hero-desc" data-i18n="hero_desc">
+    <p class="hero-lead-text" data-i18n="hero_desc">
       Transformo problemas complexos de negócios em experiências digitais claras. Uno a visão estratégica de Product Owner com base técnica em Python e pesquisa orientada a dados.
     </p>
 
-    <div class="hero-actions">
+    <div class="hero-action-buttons">
       <a class="btn-primary hoverable magnetic btn-shimmer" href="#contact">
-        <span data-i18n="hero_cta_main">INICIAR CONVERSA</span> <span class="btn-arrow">→</span>
+        <span data-i18n="hero_cta_main">INICIAR CONVERSA</span>
+        <span class="btn-arrow">→</span>
       </a>
       <a class="btn-secondary hoverable magnetic" href="#case-obsidian" data-i18n="hero_cta_sec">
         VER CASES
       </a>
     </div>
-  </div>
 
-  <div class="hero-visual-wrap reveal">
-    <div class="hero-media-card glow-card float-anim" id="heroGlitch">
-      <video class="card-media" autoplay muted loop playsinline poster="assets/hero-bg.gif">
-        <source src="assets/hero-video.mp4" type="video/mp4">
-      </video>
-      <div class="media-overlay"></div>
-      <div class="grid-overlay"></div>
-      <div class="scanlines"></div>
-      <div class="scan-bar"></div>
-
-      <div class="card-status-pill">
-        <span class="status-dot"></span>
-        <span>LIVE_SYSTEM // PRODUCT_SYNC</span>
-      </div>
-
-      <div class="hotspot hoverable" style="top:25%; left:20%;">
-        <div class="dot"></div>
-        <div class="card">
-          <span class="tag">[ CORE_PRODUCT ]</span>
-          <p data-i18n="hotspot_1">RoomMatch — app de matching para moradia compartilhada com time técnico dedicado.</p>
-        </div>
-      </div>
-
-      <div class="hotspot hoverable" style="top:50%; left:65%;">
-        <div class="dot"></div>
-        <div class="card" style="right:0; left:auto;">
-          <span class="tag">[ UX_RESEARCH ]</span>
-          <p data-i18n="hotspot_2">Decisões guiadas por comportamento e métricas reais de engajamento.</p>
-        </div>
-      </div>
-
-      <div class="hotspot hoverable" style="top:75%; left:30%;">
-        <div class="dot"></div>
-        <div class="card">
-          <span class="tag">[ BACKEND_TALK ]</span>
-          <p data-i18n="hotspot_3">Base em Python para diálogo fluido e realista de arquitetura com engenharia.</p>
-        </div>
-      </div>
+    <div class="hero-badges-row">
+      <span class="badge-tag">[ PO & DISCOVERY ]</span>
+      <span class="badge-sep">•</span>
+      <span class="badge-tag">[ PYTHON ARCHITECTURE ]</span>
+      <span class="badge-sep">•</span>
+      <span class="badge-tag">[ UX / UI FIDELITY ]</span>
     </div>
   </div>
 </section>
@@ -197,7 +179,7 @@
 
     <!-- Disclaimer / Estudo Conceitual -->
     <div class="case-disclaimer-box">
-      <span class="disclaimer-tag" data-i18n="case_disc_tag">[ DISCLAIMER // CONCEPTUAL STUDY ]</span>
+      <span class="disclaimer-tag" data-i18n="case_disc_tag">[ DISCLAIMER // ESTUDO CONCEITUAL ]</span>
       <p data-i18n="case_disc_text">
         "Este é um projeto autoral e conceitual de exploração de produto e UX. A marca Revolut foi utilizada exclusivamente como referência de ecossistema e estudo de caso prático para demonstrar estratégias de produto, arquitetura e design, sem vínculo comercial com a empresa."
       </p>
@@ -205,7 +187,6 @@
   </div>
 
   <div class="case-grid">
-    <!-- Coluna Esquerda: Visual Sticky do Cartão -->
     <div class="case-visual-col reveal">
       <div class="case-sticky-card glow-card">
         <div class="card-media-wrapper">
@@ -230,10 +211,7 @@
       </div>
     </div>
 
-    <!-- Coluna Direita: Fluxo do Case Study -->
     <div class="case-content-col stagger-reveal">
-
-      <!-- Bloco 1: Discovery -->
       <div class="case-card glow-card hoverable">
         <div class="case-card-tag" data-i18n="case_d1_tag">[ 01 // DISCOVERY ]</div>
         <h3 data-i18n="case_d1_title">Problem Framing & Contexto</h3>
@@ -242,45 +220,42 @@
         <p><strong data-i18n="case_d1_sub3">Stakeholders & Escopo:</strong> <span data-i18n="case_d1_txt3">Alinhamento de regras de negócio de câmbio (FX), compliance antifraude internacional e experiência mobile de alta fidelidade.</span></p>
       </div>
 
-      <!-- Bloco 2: Features -->
       <div class="case-card glow-card hoverable">
-        <div class="case-card-tag" data-i18n="case_d2_tag">[ 02 // STRATEGY & UX ]</div>
-        <h3 data-i18n="case_d2_title">Core Product Features</h3>
+        <div class="case-card-tag" data-i18n="case_d2_tag">[ 02 // ESTRATÉGIA & UX ]</div>
+        <h3 data-i18n="case_d2_title">Funcionalidades Principais do Produto</h3>
         <div class="feature-item">
           <strong data-i18n="case_f1_title">Predictive Multi-Currency Engine (IA de Câmbio)</strong>
           <span data-i18n="case_f1_desc">Monitoramento contínuo de janelas cambiais favoráveis com conversão automática baseada em gatilhos (hedging) definidos pelo usuário.</span>
         </div>
         <div class="feature-item">
-          <strong data-i18n="case_f2_title">Dynamic Virtual Issuance</strong>
+          <strong data-i18n="case_f2_title">Emissão Virtual Dinâmica</strong>
           <span data-i18n="case_f2_desc">Emissão instantânea de cartões virtuais com tokenização direta no Apple/Google Wallet antes do despacho do cartão metálico físico.</span>
         </div>
         <div class="feature-item">
-          <strong data-i18n="case_f3_title">Zen Wealth Interface</strong>
+          <strong data-i18n="case_f3_title">Interface Zen Wealth</strong>
           <span data-i18n="case_f3_desc">Modo de visualização limpo, sem distrações promocionais, focado em patrimônio líquido consolidado em tempo real.</span>
         </div>
       </div>
 
-      <!-- Bloco 3: Arquitetura & Governança -->
       <div class="case-card glow-card hoverable">
-        <div class="case-card-tag" data-i18n="case_d3_tag">[ 03 // ARCHITECTURE & PO GOVERNANCE ]</div>
+        <div class="case-card-tag" data-i18n="case_d3_tag">[ 03 // ARQUITETURA & GOVERNANÇA DE PO ]</div>
         <h3 data-i18n="case_d3_title">Arquitetura Técnica & Governança de PO</h3>
         <p><strong data-i18n="case_d3_sub1">Frontend / UX:</strong> <span data-i18n="case_d3_txt1">Microinterações táteis em 60fps, transições fluidas (Next.js & Tailwind) e arquitetura de componentes modulares.</span></p>
         <p><strong data-i18n="case_d3_sub2">Backend & APIs:</strong> <span data-i18n="case_d3_txt2">Integração de microsserviços em Python para conciliação bancária, webhooks assíncronos de transações e roteamento de APIs de cartões.</span></p>
-        <p><strong data-i18n="case_d3_sub3">Agile Delivery (Jira & Notion):</strong> <span data-i18n="case_d3_txt3">Épicos divididos em: Discovery, Security & Tokenization, Dynamic Limits Engine e VIP Waitlist Funnel. Critérios de aceitação estruturados no formato BDD (Given-When-Then) para testes de carga e resiliência de rede.</span></p>
+        <p><strong data-i18n="case_d3_sub3">Entrega Ágil (Jira & Notion):</strong> <span data-i18n="case_d3_txt3">Épicos divididos em: Discovery, Security & Tokenization, Dynamic Limits Engine e VIP Waitlist Funnel. Critérios de aceitação estruturados no formato BDD (Given-When-Then) para testes de carga e resiliência de rede.</span></p>
       </div>
 
-      <!-- Bloco 4: Métricas -->
       <div class="case-card glow-card hoverable">
-        <div class="case-card-tag" data-i18n="case_d4_tag">[ 04 // IMPACT & METRICS ]</div>
+        <div class="case-card-tag" data-i18n="case_d4_tag">[ 04 // IMPACTO & MÉTRICAS ]</div>
         <h3 data-i18n="case_d4_title">Métricas & Impacto Esperado</h3>
         <div class="metrics-grid">
           <div class="metric-item">
             <span class="num">+28%</span>
-            <span class="label" data-i18n="case_m1_lbl">Waitlist Conversion Rate</span>
+            <span class="label" data-i18n="case_m1_lbl">Taxa de Conversão na Waitlist</span>
           </div>
           <div class="metric-item">
             <span class="num">&lt; 60s</span>
-            <span class="label" data-i18n="case_m2_lbl">Time-to-First-Transaction</span>
+            <span class="label" data-i18n="case_m2_lbl">Tempo até 1ª Transação</span>
           </div>
           <div class="metric-item">
             <span class="num">+35%</span>
@@ -289,7 +264,6 @@
         </div>
       </div>
 
-      <!-- Tech Badges -->
       <div class="case-badges">
         <span class="badge-mini hoverable">[ FIGMA ]</span>
         <span class="badge-mini hoverable">[ PYTHON ]</span>
@@ -298,12 +272,11 @@
         <span class="badge-mini hoverable">[ SCRUM / JIRA ]</span>
         <span class="badge-mini hoverable">[ FINTECH UX ]</span>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- Sobre Mim (Card Vertical com Foto) -->
+<!-- Sobre Mim (Com Foto Vertical Preto e Branco) -->
 <section class="about" id="about">
   <div class="about-visual-wrap reveal">
     <div class="about-photo-card glow-card hoverable">
@@ -428,7 +401,7 @@
   </h2>
 </section>
 
-<!-- Stack de Ferramentas -->
+<!-- Stack de Ferramentas (9 Logos Centralizadas) -->
 <section class="clients reveal">
   <div class="kicker-tag" data-i18n="stack_kicker">[ STACK & FERRAMENTAS ]</div>
   <div class="client-grid stagger-reveal">
