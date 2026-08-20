@@ -41,3 +41,8 @@ O projeto apresenta cases reais e conceituais de produtos digitais, métricas de
 ├── index.html         # Estrutura semântica e tags de internacionalização
 ├── README.md          # Documentação do repositório
 └── script.js          # Lógica de interações, i18n e manipulação de DOM
+
+📬 Contato
+LinkedIn: linkedin.com/in/thamiresalves
+
+Portfólio: thamiresalves.vercel.app
