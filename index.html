@@ -273,6 +273,7 @@
       Concepção de produto, UX e viabilidade técnica para a expansão do segmento Ultra-High-End, integrando automação cambial preditiva e tokenização de cartões em tempo real.
     </p>
 
+    <!-- Disclaimer -->
     <div class="case-disclaimer-box">
       <span class="disclaimer-tag" data-i18n="case_disc_tag">[ DISCLAIMER // ESTUDO CONCEITUAL ]</span>
       <p data-i18n="case_disc_text">
@@ -387,7 +388,6 @@
     <div class="agile-card agile-col-5 glow-card reveal">
       <div class="card-head-row">
         <div class="title-with-icon">
-          <span class="icon-indicator">⚡</span>
           <span class="card-tag" data-i18n="agile_cap_tag">[ CAPACITY_MATRIX ]</span>
         </div>
         <span class="status-pill-green" data-i18n="agile_cap_status">7 SPRINTS ENTREGUES</span>
@@ -441,7 +441,6 @@
     <div class="agile-card agile-col-7 glow-card reveal">
       <div class="card-head-row">
         <div class="title-with-icon">
-          <span class="icon-indicator">📋</span>
           <div>
             <span class="board-title" data-i18n="agile_board_title">Jira Board — Sprint 1 (Ativa)</span>
             <span class="board-sub" data-i18n="agile_board_sub">Clique nos cards para alternar o status</span>
@@ -464,62 +463,57 @@
       </div>
     </div>
 
-    <!-- CARD 3: MAPEAMENTO ESTRATÉGICO DE ÉPICOS -->
-    <div class="agile-card agile-col-7 glow-card reveal">
-      <div class="card-head-row">
-        <div class="title-with-icon">
-          <span class="icon-indicator">🗂</span>
-          <div>
-            <span class="card-tag" data-i18n="agile_epics_tag">[ PRODUCT_EPICS_HIERARCHY ]</span>
-            <h3 class="inner-heading" data-i18n="agile_epics_title">Mapeamento dos 6 Pilares Estratégicos</h3>
-          </div>
-        </div>
+    <!-- CARD 3: MAPEAMENTO DOS 6 PILARES ESTRATÉGICOS (SEM EMOJIS, ALTA DENSIDADE) -->
+    <div class="agile-card agile-col-7 glow-card epics-card-compact reveal">
+      <div class="card-head-row-compact">
+        <span class="card-tag" data-i18n="agile_epics_tag">[ PRODUCT_EPICS_HIERARCHY ]</span>
+        <h3 class="inner-heading-compact" data-i18n="agile_epics_title">Mapeamento dos 6 Pilares Estratégicos</h3>
       </div>
 
-      <div class="epics-grid">
+      <div class="epics-grid-dense">
         <div class="epic-pill epic-blue">
-          <div class="epic-badge">E1</div>
-          <div>
+          <span class="epic-badge">E1</span>
+          <div class="epic-info">
             <strong data-i18n="epic1_title">Fundação, Contas & Segurança</strong>
             <span>KYC, LGPD, OAuth2, 2FA</span>
           </div>
         </div>
 
         <div class="epic-pill epic-green">
-          <div class="epic-badge">E2</div>
-          <div>
+          <span class="epic-badge">E2</span>
+          <div class="epic-info">
             <strong data-i18n="epic2_title">Módulo Imóvel</strong>
             <span>Upload S3, SEO SSR, Elasticsearch</span>
           </div>
         </div>
 
         <div class="epic-pill epic-purple">
-          <div class="epic-badge">E3</div>
-          <div>
+          <span class="epic-badge">E3</span>
+          <div class="epic-info">
             <strong data-i18n="epic3_title">Matching & Convivência</strong>
             <span data-i18n="epic3_desc">Algoritmo de afinidade, Swipe UX</span>
           </div>
         </div>
 
         <div class="epic-pill epic-yellow">
-          <div class="epic-badge">E4</div>
-          <div>
+          <span class="epic-badge">E4</span>
+          <div class="epic-info">
             <strong data-i18n="epic4_title">Chat em Tempo Real</strong>
             <span data-i18n="epic4_desc">WebSockets, Notificações, Privacidade</span>
           </div>
         </div>
 
         <div class="epic-pill epic-red">
-          <div class="epic-badge">E5</div>
-          <div>
+          <span class="epic-badge">E5</span>
+          <div class="epic-info">
             <strong data-i18n="epic5_title">Governança & Painel Admin</strong>
             <span data-i18n="epic5_desc">Moderação de anúncios, Denúncias</span>
           </div>
         </div>
 
         <div class="epic-pill epic-gray">
-          <div class="epic-badge">E6</div>
-          <div>
+          <span class="epic-badge">E6</span>
+          <div class="epic-info">
             <strong data-i18n="epic6_title">Performance & Deploy</strong>
             <span>Docker/K8s, Redis Cache, Pentest</span>
           </div>
@@ -527,11 +521,10 @@
       </div>
     </div>
 
-    <!-- CARD 4: GESTÃO DE RISCOS & CONTINUOUS REPLANNING -->
+    <!-- CARD 4: GESTÃO DE RISCOS & CONTINUOUS REPLANNING (SEM EMOJIS) -->
     <div class="agile-card agile-col-5 glow-card risk-card reveal">
       <div class="card-head-row">
         <div class="title-with-icon">
-          <span class="icon-indicator-amber">⚠️</span>
           <span class="card-tag card-tag-amber" data-i18n="agile_risk_tag">[ PO_CRITICAL_DECISION ]</span>
         </div>
         <span class="status-pill-amber" data-i18n="agile_risk_status">RISK_MANAGEMENT</span>
@@ -541,18 +534,18 @@
 
       <div class="risk-blocks-flow">
         <div class="risk-alert-box">
-          <strong data-i18n="agile_alert_head">⚠ Alerta Estratégico Detectado:</strong>
+          <strong data-i18n="agile_alert_head">Alerta Estratégico Detectado:</strong>
           <p data-i18n="agile_alert_txt">Identificação antecipada de sobrecarga na Sprint 7 com acúmulo de ~50 story points (200% da capacidade nominal do time).</p>
         </div>
 
         <div class="risk-action-box">
-          <strong data-i18n="agile_action_head">✓ Ação de Governança de PO:</strong>
+          <strong data-i18n="agile_action_head">Ação de Governança de PO:</strong>
           <p data-i18n="agile_action_txt">Replanejamento dinâmico baseado na Velocity média comprovada nas Sprints 5 e 6, desacoplando o deploy de infraestrutura para uma <strong>Sprint 8 de estabilização</strong>, prevenindo débito técnico e sobrecarga dos desenvolvedores.</p>
         </div>
       </div>
 
       <div class="card-footer-note">
-        <span class="highlight-green" data-i18n="agile_burnout_note">📈 Zero Burnout</span>
+        <span class="highlight-green" data-i18n="agile_burnout_note">Zero Burnout</span>
         <span data-i18n="agile_predict_note">100% PREDICTABLE DELIVERIES</span>
       </div>
     </div>
