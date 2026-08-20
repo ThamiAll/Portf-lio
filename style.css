@@ -687,47 +687,47 @@ nav.links{ display:flex; align-items:center; gap:1.8vw; }
   }
 }
 
-/* ---------- TECH STACK MARQUEE (CARROSSEL INFINITO) ---------- */
-.marquee-section {
-  position: relative;
-  width: 100%;
-  padding: 6vh 0;
-  background: var(--bg);
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+/* ---------- STACK & FERRAMENTAS — CARROSSEL INFINITO (MARQUEE) ---------- */
+.clients {
+  padding: 8vh 0 10vh;
+  text-align: center;
   overflow: hidden;
 }
 
-.marquee-container {
-  position: relative;
+.clients .kicker-tag {
+  padding: 0 5vw;
+  margin-bottom: 24px;
+}
+
+.tools-marquee-container {
   width: 100%;
   overflow: hidden;
+  position: relative;
   display: flex;
-  mask-image: linear-gradient(90deg, transparent, #000 15%, #000 85%, transparent);
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 15%, #000 85%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  padding: 1.5rem 0;
 }
 
 .tools-track {
   display: flex;
-  gap: 16px;
+  gap: 1.5rem;
   width: max-content;
-  animation: marqueeScroll 28s linear infinite;
+  animation: scrollMarquee 30s linear infinite;
   will-change: transform;
 }
 
-.marquee-container:hover .tools-track {
+.tools-marquee-container:hover .tools-track {
   animation-play-state: paused;
 }
 
-.tools-track .tech-pill-tag {
-  white-space: nowrap;
-  font-size: 0.8rem;
-  padding: 10px 18px;
-  background: rgba(255, 255, 255, 0.025);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+.tools-track .client-tile {
+  flex-shrink: 0;
+  width: 110px;
+  aspect-ratio: 1.2 / 1;
 }
 
-@keyframes marqueeScroll {
+@keyframes scrollMarquee {
   0% {
     transform: translateX(0);
   }
@@ -1721,15 +1721,7 @@ nav.links{ display:flex; align-items:center; gap:1.8vw; }
 .shine-text{ background-size:200% auto; animation:shine 6s linear infinite; }
 @keyframes shine{ to { background-position:200% center; } }
 
-/* ---------- stack (Grid com 11 Itens Otimizada) ---------- */
-.clients{ padding:8vh 5vw 10vh; text-align:center; }
-
-.client-grid{
-  display:grid;
-  grid-template-columns:repeat(11, 1fr);
-  gap:12px;
-}
-
+/* ---------- client-tile (para o Marquee) ---------- */
 .client-tile{
   position:relative;
   display:flex;
@@ -1814,20 +1806,27 @@ nav.links{ display:flex; align-items:center; gap:1.8vw; }
   transform:translateX(-50%) translateY(0);
 }
 
-@media(max-width:1200px){
-  .client-grid{ grid-template-columns:repeat(6, 1fr); }
+/* ---------- contact (Vertical Alignment & Clean Layout) ---------- */
+.contact-section{
+  padding:6vh 5vw 14vh;
+  display:grid;
+  grid-template-columns:1fr 1.15fr;
+  gap:5vw;
+  align-items:center;
 }
-@media(max-width:768px){
-  .client-grid{ grid-template-columns:repeat(4, 1fr); }
+.contact-visual{
+  height:54vh;
+  min-height:400px;
+  border-radius:32px;
 }
-@media(max-width:480px){
-  .client-grid{ grid-template-columns:repeat(3, 1fr); }
+.contact-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-/* ---------- contact ---------- */
-.contact-section{ padding:6vh 5vw 14vh; display:grid; grid-template-columns:1fr 1.1fr; gap:5vw; align-items:center; }
-.contact-visual{ height:58vh; min-height:420px; border-radius:32px; }
-.contact-copy h2{ font-family:var(--font-display); font-weight:800; font-size:clamp(1.8rem,3.2vw,2.8rem); text-align:right; margin-bottom:5vh; line-height:1.2; }
+.contact-copy .kicker-tag {
+  margin-bottom: 24px;
+}
 .field{ margin-bottom:16px; position:relative; }
 .field input, .field textarea{
   width:100%; background:rgba(255,255,255,0.03); border:1px solid var(--line); border-radius:16px;
@@ -1835,11 +1834,11 @@ nav.links{ display:flex; align-items:center; gap:1.8vw; }
   transition:all .3s var(--ease-smooth);
 }
 .field input:focus, .field textarea:focus{
-  border-color:var(--c1); background:rgba(255,255,255,0.06);
-  box-shadow:0 0 24px -4px rgba(77,107,255,0.4);
+  border-color:var(--c3); background:rgba(255,255,255,0.05);
+  box-shadow:0 0 24px -4px rgba(236,72,153,0.25);
   transform:translateY(-2px);
 }
-.field textarea{ min-height:110px; resize:vertical; }
+.field textarea{ min-height:120px; resize:vertical; }
 .field ::placeholder{ color:var(--ink-dim); }
 .field .ok-tick{ position:absolute; right:18px; top:18px; color:var(--ok); font-size:0.85rem; opacity:0; transform:scale(0.5); transition:all .3s var(--ease-elastic); }
 .field.valid .ok-tick{ opacity:1; transform:scale(1); }
@@ -1855,7 +1854,7 @@ nav.links{ display:flex; align-items:center; gap:1.8vw; }
 }
 .submit-btn:active{ transform:scale(0.98); }
 .submit-btn.sent{ background:linear-gradient(100deg,var(--ok),#2fd88a); color:#07070a; }
-@media(max-width:900px){ .contact-section{ grid-template-columns:1fr; } .contact-visual{ height:36vh; order:2; } .contact-copy h2{ text-align:left; } }
+@media(max-width:900px){ .contact-section{ grid-template-columns:1fr; gap:4vh; } .contact-visual{ height:36vh; order:2; } }
 
 /* ---------- footer ---------- */
 footer{ border-top:1px solid var(--line); padding:8vh 5vw 5vh; }
