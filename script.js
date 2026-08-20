@@ -7,6 +7,7 @@ const translations = {
     nav_home: "Home",
     nav_bento: "Visão Geral",
     nav_case: "Cases",
+    nav_agile: "Governança",
     nav_about: "Sobre",
     nav_services: "Atuação",
     nav_process: "Processo",
@@ -72,6 +73,53 @@ const translations = {
     case_m1_lbl: "Taxa de Conversão na Waitlist",
     case_m2_lbl: "Tempo até 1ª Transação",
     case_m3_lbl: "Retenção & LTV (TPV)",
+
+    /* AGILE GOVERNANCE CASE */
+    agile_kicker: "[ AGILE_GOVERNANCE // ENGINEERING COLLABORATION ]",
+    agile_title: "Backlog Architecture & Sprint Orchestration",
+    agile_subtitle: "Liderança ponta a ponta como Product Owner no projeto RoomMatch, coordenando a capacidade de 2 engenheiros full-stack através de 7 sprints estruturadas no Jira com pontuação em Fibonacci.",
+    agile_cap_tag: "[ CAPACITY_MATRIX ]",
+    agile_cap_status: "7 SPRINTS ENTREGUES",
+    agile_stat1_lbl: "User Stories",
+    agile_stat1_unit: "itens",
+    agile_stat1_sub: "Mapeadas ponta a ponta",
+    agile_stat2_lbl: "Story Points",
+    agile_stat2_sub: "Fibonacci (1, 2, 3, 5, 8)",
+    agile_stat3_lbl: "Velocity Média",
+    agile_stat3_sub: "Capacidade nominal (2 Devs)",
+    agile_stat4_lbl: "Cadência",
+    agile_stat4_unit: "dias",
+    agile_stat4_sub: "Sprints quinzenais contínuas",
+    agile_team_note: "TIME: 2 DEVS FULL-STACK",
+    agile_success_note: "100% SPRINT SUCCESS",
+    agile_board_title: "Jira Board — Sprint 1 (Ativa)",
+    agile_board_sub: "Clique nos cards para alternar o status",
+    tab_all: "Todos",
+    tab_done: "Concluído",
+    tab_prog: "Fazendo",
+    tab_todo: "A Fazer",
+    agile_scope_note: "ESCOPO DA SPRINT 1: 23 PTS",
+    agile_ontrack_note: "STATUS: ON_TRACK (100% COMMITTED)",
+    agile_epics_tag: "[ PRODUCT_EPICS_HIERARCHY ]",
+    agile_epics_title: "Mapeamento dos 6 Pilares Estratégicos",
+    epic1_title: "Fundação, Contas & Segurança",
+    epic2_title: "Módulo Imóvel",
+    epic3_title: "Matching & Convivência",
+    epic3_desc: "Algoritmo de afinidade, Swipe UX",
+    epic4_title: "Chat em Tempo Real",
+    epic4_desc: "WebSockets, Notificações, Privacidade",
+    epic5_title: "Governança & Painel Admin",
+    epic5_desc: "Moderação de anúncios, Denúncias",
+    epic6_title: "Performance & Deploy",
+    agile_risk_tag: "[ PO_CRITICAL_DECISION ]",
+    agile_risk_status: "RISK_MANAGEMENT",
+    agile_risk_title: "Gestão de Riscos & Replanejamento Contínuo",
+    agile_alert_head: "⚠ Alerta Estratégico Detectado:",
+    agile_alert_txt: "Identificação antecipada de sobrecarga na Sprint 7 com acúmulo de ~50 story points (200% da capacidade nominal do time).",
+    agile_action_head: "✓ Ação de Governança de PO:",
+    agile_action_txt: "Replanejamento dinâmico baseado na Velocity média comprovada nas Sprints 5 e 6, desacoplando o deploy de infraestrutura para uma Sprint 8 de estabilização, prevenindo débito técnico e sobrecarga dos desenvolvedores.",
+    agile_burnout_note: "📈 Zero Burnout",
+    agile_predict_note: "100% PREDICTABLE DELIVERIES",
 
     about_kicker: "[ QUEM SOU ]",
     about_heading: "Construindo pontes entre visão de negócio, código e design",
@@ -143,6 +191,7 @@ const translations = {
     nav_home: "Home",
     nav_bento: "Overview",
     nav_case: "Cases",
+    nav_agile: "Governance",
     nav_about: "About",
     nav_services: "Services",
     nav_process: "Process",
@@ -208,6 +257,53 @@ const translations = {
     case_m1_lbl: "Waitlist Conversion Rate",
     case_m2_lbl: "Time-to-First-Transaction",
     case_m3_lbl: "TPV Lift & Retention",
+
+    /* AGILE GOVERNANCE CASE */
+    agile_kicker: "[ AGILE_GOVERNANCE // ENGINEERING COLLABORATION ]",
+    agile_title: "Backlog Architecture & Sprint Orchestration",
+    agile_subtitle: "End-to-end leadership as Product Owner for RoomMatch, coordinating a 2-developer capacity across 7 sprints in Jira with Fibonacci-based story estimation.",
+    agile_cap_tag: "[ CAPACITY_MATRIX ]",
+    agile_cap_status: "7 SPRINTS DELIVERED",
+    agile_stat1_lbl: "User Stories",
+    agile_stat1_unit: "items",
+    agile_stat1_sub: "Scoped end-to-end",
+    agile_stat2_lbl: "Story Points",
+    agile_stat2_sub: "Fibonacci (1, 2, 3, 5, 8)",
+    agile_stat3_lbl: "Average Velocity",
+    agile_stat3_sub: "Nominal Capacity (2 Devs)",
+    agile_stat4_lbl: "Cadence",
+    agile_stat4_unit: "days",
+    agile_stat4_sub: "Continuous bi-weekly sprints",
+    agile_team_note: "TEAM: 2 FULL-STACK DEVS",
+    agile_success_note: "100% SPRINT SUCCESS",
+    agile_board_title: "Jira Board — Sprint 1 (Active)",
+    agile_board_sub: "Click task cards to cycle status",
+    tab_all: "All",
+    tab_done: "Done",
+    tab_prog: "In Progress",
+    tab_todo: "To Do",
+    agile_scope_note: "SPRINT 1 SCOPE: 23 PTS",
+    agile_ontrack_note: "STATUS: ON_TRACK (100% COMMITTED)",
+    agile_epics_tag: "[ PRODUCT_EPICS_HIERARCHY ]",
+    agile_epics_title: "Strategic 6-Epic Architecture",
+    epic1_title: "Core Foundation, Auth & Security",
+    epic2_title: "Property Management & Listing",
+    epic3_title: "Matching & Cohabitation Algorithm",
+    epic3_desc: "Affinity score, Swipe UX",
+    epic4_title: "Real-Time Chat & Sockets",
+    epic4_desc: "WebSockets, Notifications, Privacy",
+    epic5_title: "Governance & Admin Moderation",
+    epic5_desc: "Ad moderation, Reporting queue",
+    epic6_title: "Performance, Infra & Deployment",
+    agile_risk_tag: "[ PO_CRITICAL_DECISION ]",
+    agile_risk_status: "RISK_MANAGEMENT",
+    agile_risk_title: "Risk Management & Continuous Replanning",
+    agile_alert_head: "⚠ Strategic Bottleneck Alert:",
+    agile_alert_txt: "Identified Sprint 7 overload accumulating ~50 story points (200% over team nominal capacity).",
+    agile_action_head: "✓ PO Governance Action:",
+    agile_action_txt: "Dynamic replanning based on proven velocity across Sprints 5 and 6, decoupling deployment into an 8th Stabilization Sprint to prevent technical debt and engineer burnout.",
+    agile_burnout_note: "📈 Zero Burnout",
+    agile_predict_note: "100% PREDICTABLE DELIVERIES",
 
     about_kicker: "[ ABOUT ME ]",
     about_heading: "Bridging the gap between business vision, clean code & design",
@@ -277,6 +373,66 @@ const translations = {
 
 let currentLang = 'pt';
 
+/* =========================================================
+   2. ESTADO DO MINI-KANBAN JIRA
+   ========================================================= */
+const kanbanTasks = [
+  { id: '1', key: 'ROOM-9', title: 'Infraestrutura Cloud & CI/CD Pipeline', points: 5, status: 'DONE' },
+  { id: '2', key: 'ROOM-10', title: 'Modelagem de Dados PostgreSQL', points: 5, status: 'DONE' },
+  { id: '3', key: 'ROOM-11', title: 'Auth & Login (OAuth2 + Social)', points: 5, status: 'IN_PROGRESS' },
+  { id: '4', key: 'ROOM-12', title: 'Autenticação de Dois Fatores (2FA)', points: 3, status: 'TODO' },
+  { id: '5', key: 'ROOM-15', title: 'Hardening de Segurança & Mitigação OWASP', points: 5, status: 'TODO' }
+];
+
+let activeFilter = 'ALL';
+
+function renderKanban() {
+  const container = document.getElementById('kanbanTasksList');
+  if (!container) return;
+
+  container.innerHTML = '';
+
+  const filtered = activeFilter === 'ALL'
+    ? kanbanTasks
+    : kanbanTasks.filter(t => t.status === activeFilter);
+
+  filtered.forEach(task => {
+    const item = document.createElement('div');
+    item.className = 'kanban-task-item';
+
+    const statusLabels = {
+      DONE: currentLang === 'pt' ? 'FEITO' : 'DONE',
+      IN_PROGRESS: currentLang === 'pt' ? 'FAZENDO' : 'IN PROG',
+      TODO: currentLang === 'pt' ? 'A FAZER' : 'TO DO'
+    };
+
+    const statusClass = {
+      DONE: 'task-badge-done',
+      IN_PROGRESS: 'task-badge-prog',
+      TODO: 'task-badge-todo'
+    };
+
+    item.innerHTML = `
+      <div class="task-left">
+        <span class="task-key">${task.key}</span>
+        <span class="task-name">${task.title}</span>
+      </div>
+      <div class="task-right">
+        <span class="task-pts">${task.points} pts</span>
+        <span class="${statusClass[task.status]}">${statusLabels[task.status]}</span>
+      </div>
+    `;
+
+    item.addEventListener('click', () => {
+      const cycle = { 'TODO': 'IN_PROGRESS', 'IN_PROGRESS': 'DONE', 'DONE': 'TODO' };
+      task.status = cycle[task.status];
+      renderKanban();
+    });
+
+    container.appendChild(item);
+  });
+}
+
 function applyLanguage(lang) {
   currentLang = lang;
   document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
@@ -299,6 +455,8 @@ function applyLanguage(lang) {
   document.querySelectorAll('.lang-opt').forEach(btn => {
     btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
   });
+
+  renderKanban();
 }
 
 // Seletor de Idioma
@@ -324,8 +482,18 @@ document.addEventListener('click', (e) => {
   }
 });
 
+// Filtros do Kanban
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeFilter = btn.getAttribute('data-filter');
+    renderKanban();
+  });
+});
+
 /* =========================================================
-   2. CURSOR FLUIDO (LERP) E MICROINTERAÇÕES
+   3. CURSOR FLUIDO (LERP) E MICROINTERAÇÕES
    ========================================================= */
 const cur = document.getElementById('cur');
 const ring = document.getElementById('curRing');
@@ -356,13 +524,13 @@ function renderLoop() {
 }
 renderLoop();
 
-document.querySelectorAll('.hoverable, a, button, input, textarea, .hotspot, .client-tile, .bento-card, .service-card, .case-card').forEach(el => {
+document.querySelectorAll('.hoverable, a, button, input, textarea, .hotspot, .client-tile, .bento-card, .service-card, .case-card, .agile-card').forEach(el => {
   el.addEventListener('mouseenter', () => ring.classList.add('hover'));
   el.addEventListener('mouseleave', () => ring.classList.remove('hover'));
 });
 
 /* =========================================================
-   3. FÍSICA MAGNÉTICA EM BOTÕES E ÍCONES (SPRING FEEL)
+   4. FÍSICA MAGNÉTICA EM BOTÕES E ÍCONES
    ========================================================= */
 document.querySelectorAll('.magnetic').forEach(btn => {
   btn.addEventListener('mousemove', e => {
@@ -378,7 +546,7 @@ document.querySelectorAll('.magnetic').forEach(btn => {
 });
 
 /* =========================================================
-   4. PROGRESSO DE SCROLL E NAV ATIVA
+   5. PROGRESSO DE SCROLL E NAV ATIVA
    ========================================================= */
 const progress = document.getElementById('progress');
 window.addEventListener('scroll', () => {
@@ -387,7 +555,7 @@ window.addEventListener('scroll', () => {
   progress.style.width = pct + '%';
 });
 
-const sections = ['home', 'bento', 'case-obsidian', 'about', 'services', 'process', 'contact'].map(id => document.getElementById(id)).filter(Boolean);
+const sections = ['home', 'bento', 'case-obsidian', 'agile-governance', 'about', 'services', 'process', 'contact'].map(id => document.getElementById(id)).filter(Boolean);
 const navA = document.querySelectorAll('#navLinks a');
 const navIO = new IntersectionObserver((entries) => {
   entries.forEach(e => {
@@ -401,7 +569,7 @@ const navIO = new IntersectionObserver((entries) => {
 sections.forEach(s => navIO.observe(s));
 
 /* =========================================================
-   5. REVEAL ESCALONADO EM SCROLL
+   6. REVEAL ESCALONADO EM SCROLL
    ========================================================= */
 const io = new IntersectionObserver((entries) => {
   entries.forEach(e => {
@@ -419,7 +587,7 @@ const io = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal, .stagger-reveal').forEach(el => io.observe(el));
 
 /* =========================================================
-   6. GLOW SPOTLIGHT NOS CARDS (BENTO, CASES, SERVICES)
+   7. GLOW SPOTLIGHT NOS CARDS
    ========================================================= */
 document.querySelectorAll('.glow-card').forEach(card => {
   card.addEventListener('mousemove', e => {
@@ -432,9 +600,9 @@ document.querySelectorAll('.glow-card').forEach(card => {
 });
 
 /* =========================================================
-   7. TILT 3D COM AMORTECIMENTO SUAVE (SMOOTH PARALLAX)
+   8. TILT 3D COM AMORTECIMENTO SUAVE
    ========================================================= */
-document.querySelectorAll('.service-card, .bento-card, .case-card').forEach(card => {
+document.querySelectorAll('.service-card, .bento-card, .case-card, .agile-card').forEach(card => {
   const btn = card.querySelector('.discover');
   if (btn) {
     btn.addEventListener('click', (e) => {
@@ -456,7 +624,7 @@ document.querySelectorAll('.service-card, .bento-card, .case-card').forEach(card
 });
 
 /* =========================================================
-   8. ACCORDION DO PROCESSO
+   9. ACCORDION DO PROCESSO
    ========================================================= */
 document.querySelectorAll('[data-step]').forEach(row => {
   row.addEventListener('click', () => {
@@ -467,7 +635,7 @@ document.querySelectorAll('[data-step]').forEach(row => {
 });
 
 /* =========================================================
-   9. FORMULÁRIO E SCROLL SUAVE
+   10. FORMULÁRIO E SCROLL SUAVE
    ========================================================= */
 document.querySelectorAll('#contactForm input[required], #contactForm textarea[required]').forEach(inp => {
   inp.addEventListener('input', () => {
@@ -491,10 +659,11 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 document.getElementById('backTop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 document.getElementById('footWord').addEventListener('click', () => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }));
 
-// Desacelera o vídeo de fundo da Hero para 60%
+// Inicialização: desacelera o vídeo da hero para 60% e renderiza o kanban
 document.addEventListener('DOMContentLoaded', () => {
   const heroVideo = document.getElementById('heroAmbientVideo');
   if (heroVideo) {
     heroVideo.playbackRate = 0.6;
   }
+  renderKanban();
 });

@@ -31,6 +31,7 @@
     <a href="#home" class="active" data-i18n="nav_home">Home</a>
     <a href="#bento" data-i18n="nav_bento">Visão Geral</a>
     <a href="#case-obsidian" data-i18n="nav_case">Cases</a>
+    <a href="#agile-governance" data-i18n="nav_agile">Governança</a>
     <a href="#about" data-i18n="nav_about">Sobre</a>
     <a href="#services" data-i18n="nav_services">Atuação</a>
     <a href="#process" data-i18n="nav_process">Processo</a>
@@ -64,7 +65,7 @@
   </div>
 </header>
 
-<!-- Hero Section Full-Bleed com Vídeo de Fundo e CTAs Refatorados -->
+<!-- Hero Section Full-Bleed -->
 <section class="hero-fullscreen" id="home">
   <video
     id="heroAmbientVideo"
@@ -93,7 +94,6 @@
       Transformo problemas complexos de negócios em experiências digitais claras. Uno a visão estratégica de Product Owner com base técnica em Python e pesquisa orientada a dados.
     </p>
 
-    <!-- CTAs Refatorados -->
     <div class="hero-action-buttons">
       <a class="btn-primary-hero hoverable magnetic btn-shimmer" href="#contact">
         <span data-i18n="hero_cta_main">INICIAR CONVERSA</span>
@@ -104,10 +104,8 @@
       </a>
     </div>
 
-    <!-- Linha Divisória com Fade Suave -->
     <div class="hero-divider-fade"></div>
 
-    <!-- Micro-badges Inferiores -->
     <div class="hero-badges-row">
       <span class="badge-tag">[ PO & DISCOVERY ]</span>
       <span class="badge-sep">•</span>
@@ -182,7 +180,7 @@
       Concepção de produto, UX e viabilidade técnica para a expansão do segmento Ultra-High-End, integrando automação cambial preditiva e tokenização de cartões em tempo real.
     </p>
 
-    <!-- Disclaimer / Estudo Conceitual -->
+    <!-- Disclaimer -->
     <div class="case-disclaimer-box">
       <span class="disclaimer-tag" data-i18n="case_disc_tag">[ DISCLAIMER // ESTUDO CONCEITUAL ]</span>
       <p data-i18n="case_disc_text">
@@ -192,7 +190,6 @@
   </div>
 
   <div class="case-grid">
-    <!-- Coluna Esquerda: Visual Sticky do Cartão -->
     <div class="case-visual-col reveal">
       <div class="case-sticky-card glow-card">
         <div class="card-media-wrapper">
@@ -217,10 +214,7 @@
       </div>
     </div>
 
-    <!-- Coluna Direita: Fluxo do Case Study -->
     <div class="case-content-col stagger-reveal">
-
-      <!-- Bloco 1: Discovery -->
       <div class="case-card glow-card hoverable">
         <div class="case-card-tag" data-i18n="case_d1_tag">[ 01 // DISCOVERY ]</div>
         <h3 data-i18n="case_d1_title">Problem Framing & Contexto</h3>
@@ -229,7 +223,6 @@
         <p><strong data-i18n="case_d1_sub3">Stakeholders & Escopo:</strong> <span data-i18n="case_d1_txt3">Alinhamento de regras de negócio de câmbio (FX), compliance antifraude internacional e experiência mobile de alta fidelidade.</span></p>
       </div>
 
-      <!-- Bloco 2: Features -->
       <div class="case-card glow-card hoverable">
         <div class="case-card-tag" data-i18n="case_d2_tag">[ 02 // ESTRATÉGIA & UX ]</div>
         <h3 data-i18n="case_d2_title">Funcionalidades Principais do Produto</h3>
@@ -247,7 +240,6 @@
         </div>
       </div>
 
-      <!-- Bloco 3: Arquitetura & Governança -->
       <div class="case-card glow-card hoverable">
         <div class="case-card-tag" data-i18n="case_d3_tag">[ 03 // ARQUITETURA & GOVERNANÇA DE PO ]</div>
         <h3 data-i18n="case_d3_title">Arquitetura Técnica & Governança de PO</h3>
@@ -256,7 +248,6 @@
         <p><strong data-i18n="case_d3_sub3">Entrega Ágil (Jira & Notion):</strong> <span data-i18n="case_d3_txt3">Épicos divididos em: Discovery, Security & Tokenization, Dynamic Limits Engine e VIP Waitlist Funnel. Critérios de aceitação estruturados no formato BDD (Given-When-Then) para testes de carga e resiliência de rede.</span></p>
       </div>
 
-      <!-- Bloco 4: Métricas -->
       <div class="case-card glow-card hoverable">
         <div class="case-card-tag" data-i18n="case_d4_tag">[ 04 // IMPACTO & MÉTRICAS ]</div>
         <h3 data-i18n="case_d4_title">Métricas & Impacto Esperado</h3>
@@ -276,7 +267,6 @@
         </div>
       </div>
 
-      <!-- Tech Badges -->
       <div class="case-badges">
         <span class="badge-mini hoverable">[ FIGMA ]</span>
         <span class="badge-mini hoverable">[ PYTHON ]</span>
@@ -285,12 +275,211 @@
         <span class="badge-mini hoverable">[ SCRUM / JIRA ]</span>
         <span class="badge-mini hoverable">[ FINTECH UX ]</span>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- Sobre Mim (Card Vertical com Foto Preto e Branco) -->
+<!-- SEÇÃO NOVA: AGILE GOVERNANCE & PO CASE STUDY (ROOMMATCH) -->
+<section class="agile-section" id="agile-governance">
+  <div class="agile-header reveal">
+    <div class="kicker-tag" data-i18n="agile_kicker">[ AGILE_GOVERNANCE // ENGINEERING COLLABORATION ]</div>
+    <h2 data-i18n="agile_title">Backlog Architecture & Sprint Orchestration</h2>
+    <p class="agile-subtitle" data-i18n="agile_subtitle">
+      Liderança ponta a ponta como Product Owner no projeto RoomMatch, coordenando a capacidade de 2 engenheiros full-stack através de 7 sprints estruturadas no Jira com pontuação em Fibonacci.
+    </p>
+  </div>
+
+  <div class="agile-grid">
+
+    <!-- CARD 1: SPRINT CAPACITY & METRICS -->
+    <div class="agile-card agile-col-5 glow-card reveal">
+      <div class="card-head-row">
+        <div class="title-with-icon">
+          <span class="icon-indicator">⚡</span>
+          <span class="card-tag" data-i18n="agile_cap_tag">[ CAPACITY_MATRIX ]</span>
+        </div>
+        <span class="status-pill-green" data-i18n="agile_cap_status">7 SPRINTS ENTREGUES</span>
+      </div>
+
+      <div class="stats-2x2-grid">
+        <div class="metric-mini-box">
+          <span class="lbl" data-i18n="agile_stat1_lbl">User Stories</span>
+          <div class="val-group">
+            <span class="num">32</span>
+            <span class="unit" data-i18n="agile_stat1_unit">itens</span>
+          </div>
+          <span class="sub" data-i18n="agile_stat1_sub">Mapeadas ponta a ponta</span>
+        </div>
+
+        <div class="metric-mini-box">
+          <span class="lbl" data-i18n="agile_stat2_lbl">Story Points</span>
+          <div class="val-group">
+            <span class="num num-purple">178</span>
+            <span class="unit">pts</span>
+          </div>
+          <span class="sub" data-i18n="agile_stat2_sub">Fibonacci (1, 2, 3, 5, 8)</span>
+        </div>
+
+        <div class="metric-mini-box">
+          <span class="lbl" data-i18n="agile_stat3_lbl">Velocity Média</span>
+          <div class="val-group">
+            <span class="num num-green">25</span>
+            <span class="unit">pts/sp</span>
+          </div>
+          <span class="sub" data-i18n="agile_stat3_sub">Capacidade nominal (2 Devs)</span>
+        </div>
+
+        <div class="metric-mini-box">
+          <span class="lbl" data-i18n="agile_stat4_lbl">Cadência</span>
+          <div class="val-group">
+            <span class="num">14</span>
+            <span class="unit" data-i18n="agile_stat4_unit">dias</span>
+          </div>
+          <span class="sub" data-i18n="agile_stat4_sub">Sprints quinzenais contínuas</span>
+        </div>
+      </div>
+
+      <div class="card-footer-note">
+        <span data-i18n="agile_team_note">TIME: 2 DEVS FULL-STACK</span>
+        <span class="highlight" data-i18n="agile_success_note">100% SPRINT SUCCESS</span>
+      </div>
+    </div>
+
+    <!-- CARD 2: BACKLOG INTERATIVO & MINI-KANBAN JIRA -->
+    <div class="agile-card agile-col-7 glow-card reveal">
+      <div class="card-head-row">
+        <div class="title-with-icon">
+          <span class="icon-indicator">📋</span>
+          <div>
+            <span class="board-title" data-i18n="agile_board_title">Jira Board — Sprint 1 (Ativa)</span>
+            <span class="board-sub" data-i18n="agile_board_sub">Clique nos cards para alternar o status</span>
+          </div>
+        </div>
+
+        <div class="kanban-filter-tabs">
+          <button class="tab-btn active" data-filter="ALL" data-i18n="tab_all">Todos</button>
+          <button class="tab-btn" data-filter="DONE" data-i18n="tab_done">Concluído</button>
+          <button class="tab-btn" data-filter="IN_PROGRESS" data-i18n="tab_prog">Fazendo</button>
+          <button class="tab-btn" data-filter="TODO" data-i18n="tab_todo">A Fazer</button>
+        </div>
+      </div>
+
+      <div class="kanban-tasks-list" id="kanbanTasksList">
+        <!-- Itens inseridos e controlados via JavaScript -->
+      </div>
+
+      <div class="card-footer-note">
+        <span data-i18n="agile_scope_note">ESCOPO DA SPRINT 1: 23 PTS</span>
+        <span class="highlight-green" data-i18n="agile_ontrack_note">STATUS: ON_TRACK (100% COMMITTED)</span>
+      </div>
+    </div>
+
+    <!-- CARD 3: MAPEAMENTO ESTRATÉGICO DE ÉPICOS -->
+    <div class="agile-card agile-col-7 glow-card reveal">
+      <div class="card-head-row">
+        <div class="title-with-icon">
+          <span class="icon-indicator">🗂</span>
+          <div>
+            <span class="card-tag" data-i18n="agile_epics_tag">[ PRODUCT_EPICS_HIERARCHY ]</span>
+            <h3 class="inner-heading" data-i18n="agile_epics_title">Mapeamento dos 6 Pilares Estratégicos</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="epics-grid">
+        <div class="epic-pill epic-blue">
+          <div class="epic-badge">E1</div>
+          <div>
+            <strong data-i18n="epic1_title">Fundação, Contas & Segurança</strong>
+            <span>KYC, LGPD, OAuth2, 2FA</span>
+          </div>
+        </div>
+
+        <div class="epic-pill epic-green">
+          <div class="epic-badge">E2</div>
+          <div>
+            <strong data-i18n="epic2_title">Módulo Imóvel</strong>
+            <span>Upload S3, SEO SSR, Elasticsearch</span>
+          </div>
+        </div>
+
+        <div class="epic-pill epic-purple">
+          <div class="epic-badge">E3</div>
+          <div>
+            <strong data-i18n="epic3_title">Matching & Convivência</strong>
+            <span data-i18n="epic3_desc">Algoritmo de afinidade, Swipe UX</span>
+          </div>
+        </div>
+
+        <div class="epic-pill epic-yellow">
+          <div class="epic-badge">E4</div>
+          <div>
+            <strong data-i18n="epic4_title">Chat em Tempo Real</strong>
+            <span data-i18n="epic4_desc">WebSockets, Notificações, Privacidade</span>
+          </div>
+        </div>
+
+        <div class="epic-pill epic-red">
+          <div class="epic-badge">E5</div>
+          <div>
+            <strong data-i18n="epic5_title">Governança & Painel Admin</strong>
+            <span data-i18n="epic5_desc">Moderação de anúncios, Denúncias</span>
+          </div>
+        </div>
+
+        <div class="epic-pill epic-gray">
+          <div class="epic-badge">E6</div>
+          <div>
+            <strong data-i18n="epic6_title">Performance & Deploy</strong>
+            <span>Docker/K8s, Redis Cache, Pentest</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4: GESTÃO DE RISCOS & CONTINUOUS REPLANNING -->
+    <div class="agile-card agile-col-5 glow-card risk-card reveal">
+      <div class="card-head-row">
+        <div class="title-with-icon">
+          <span class="icon-indicator-amber">⚠️</span>
+          <span class="card-tag card-tag-amber" data-i18n="agile_risk_tag">[ PO_CRITICAL_DECISION ]</span>
+        </div>
+        <span class="status-pill-amber" data-i18n="agile_risk_status">RISK_MANAGEMENT</span>
+      </div>
+
+      <h3 class="risk-heading" data-i18n="agile_risk_title">Gestão de Riscos & Replanejamento Contínuo</h3>
+
+      <div class="risk-blocks-flow">
+        <div class="risk-alert-box">
+          <strong data-i18n="agile_alert_head">⚠ Alerta Estratégico Detectado:</strong>
+          <p data-i18n="agile_alert_txt">Identificação antecipada de sobrecarga na Sprint 7 com acúmulo de ~50 story points (200% da capacidade nominal do time).</p>
+        </div>
+
+        <div class="risk-action-box">
+          <strong data-i18n="agile_action_head">✓ Ação de Governança de PO:</strong>
+          <p data-i18n="agile_action_txt">Replanejamento dinâmico baseado na Velocity média comprovada nas Sprints 5 e 6, desacoplando o deploy de infraestrutura para uma <strong>Sprint 8 de estabilização</strong>, prevenindo débito técnico e sobrecarga dos desenvolvedores.</p>
+        </div>
+      </div>
+
+      <div class="card-footer-note">
+        <span class="highlight-green" data-i18n="agile_burnout_note">📈 Zero Burnout</span>
+        <span data-i18n="agile_predict_note">100% PREDICTABLE DELIVERIES</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Tech Badges do Bloco Ágil -->
+  <div class="agile-bottom-badges reveal">
+    <span class="badge-mini hoverable">[ JIRA SOFTWARE ]</span>
+    <span class="badge-mini hoverable">[ SCRUM FRAMEWORK ]</span>
+    <span class="badge-mini hoverable">[ FIBONACCI ESTIMATION ]</span>
+    <span class="badge-mini hoverable">[ BDD ACCEPTANCE CRITERIA ]</span>
+    <span class="badge-mini hoverable">[ TECHNICAL DEBT MANAGEMENT ]</span>
+  </div>
+</section>
+
+<!-- Sobre Mim -->
 <section class="about" id="about">
   <div class="about-visual-wrap reveal">
     <div class="about-photo-card glow-card hoverable">
@@ -498,6 +687,7 @@
         <span data-i18n="nav_home">Home</span><br>
         <span data-i18n="nav_bento">Visão Geral</span><br>
         <span data-i18n="nav_case">Cases</span><br>
+        <span data-i18n="nav_agile">Governança</span><br>
         <span data-i18n="nav_about">Sobre</span><br>
         <span data-i18n="nav_services">Atuação</span>
       </div>
