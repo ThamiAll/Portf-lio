@@ -491,7 +491,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 document.getElementById('backTop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 document.getElementById('footWord').addEventListener('click', () => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }));
 
-// Desacelera o vídeo de fundo da Hero para 60% para movimentação ambiente suave
+// Desacelera o vídeo de fundo da Hero para 60%
 document.addEventListener('DOMContentLoaded', () => {
   const heroVideo = document.getElementById('heroAmbientVideo');
   if (heroVideo) {
