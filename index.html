@@ -716,33 +716,35 @@
 
 <!-- Contato -->
 <section class="contact-section" id="contact">
-  <div class="contact-visual liquid glow-card reveal">
-    <div class="grid-overlay"></div>
-    <div class="scanlines"></div>
-    <div class="scan-bar"></div>
-    <div class="frame-tag"><span class="status-dot"></span>[ CHANNEL_OPEN ]</div>
-  </div>
+  <div class="contact-grid-wrapper">
+    <div class="contact-visual liquid glow-card reveal">
+      <div class="grid-overlay"></div>
+      <div class="scanlines"></div>
+      <div class="scan-bar"></div>
+      <div class="frame-tag"><span class="status-dot"></span>[ CHANNEL_OPEN ]</div>
+    </div>
 
-  <div class="contact-copy reveal">
-    <div class="kicker-tag" data-i18n="contact_kicker">[ FALE COMIGO ]</div>
+    <div class="contact-copy reveal">
+      <div class="kicker-tag" data-i18n="contact_kicker">[ FALE COMIGO ]</div>
 
-    <form id="contactForm" onsubmit="return false;">
-      <div class="field">
-        <input type="text" placeholder="Nome" data-i18n-ph="ph_name" required>
-        <span class="ok-tick">✓</span>
-      </div>
-      <div class="field">
-        <input type="email" placeholder="E-mail" data-i18n-ph="ph_email" required>
-        <span class="ok-tick">✓</span>
-      </div>
-      <div class="field">
-        <input type="text" placeholder="Assunto" data-i18n-ph="ph_subject">
-      </div>
-      <div class="field">
-        <textarea placeholder="Mensagem" data-i18n-ph="ph_message" required></textarea>
-      </div>
-      <button class="submit-btn hoverable magnetic btn-shimmer" id="submitBtn" type="submit" data-i18n="contact_btn">ENVIAR MENSAGEM →</button>
-    </form>
+      <form id="contactForm" onsubmit="return false;">
+        <div class="field">
+          <input type="text" placeholder="Nome" data-i18n-ph="ph_name" required>
+          <span class="ok-tick">✓</span>
+        </div>
+        <div class="field">
+          <input type="email" placeholder="E-mail" data-i18n-ph="ph_email" required>
+          <span class="ok-tick">✓</span>
+        </div>
+        <div class="field">
+          <input type="text" placeholder="Assunto" data-i18n-ph="ph_subject">
+        </div>
+        <div class="field">
+          <textarea placeholder="Mensagem" data-i18n-ph="ph_message" required></textarea>
+        </div>
+        <button class="submit-btn hoverable magnetic btn-shimmer" id="submitBtn" type="submit" data-i18n="contact_btn">ENVIAR MENSAGEM →</button>
+      </form>
+    </div>
   </div>
 </section>
 
