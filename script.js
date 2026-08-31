@@ -696,10 +696,37 @@ document.getElementById('backTop').addEventListener('click', () => window.scroll
 document.getElementById('footWord').addEventListener('click', () => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }));
 
 // Inicialização
+// document.addEventListener('DOMContentLoaded', () => {
+//   const heroVideo = document.getElementById('heroAmbientVideo');
+//   if (heroVideo) {
+//     heroVideo.playbackRate = 0.6;
+//   }
+//   renderKanban();
+// });
 document.addEventListener('DOMContentLoaded', () => {
-  const heroVideo = document.getElementById('heroAmbientVideo');
-  if (heroVideo) {
-    heroVideo.playbackRate = 0.6;
+  const heroSection = document.querySelector('.hero-parallax');
+  const layers = document.querySelectorAll('.parallax-layer');
+  const heroContent = document.querySelector('.layer-content');
+
+  function handleParallax() {
+    const scrollY = window.pageYOffset;
+    const heroHeight = heroSection.offsetHeight;
+
+    if (scrollY <= heroHeight) {
+      // 1. Efeito de fade progressivo conforme rola para baixo
+      const fadeRatio = 1 - (scrollY / (heroHeight * 0.75));
+      heroContent.style.opacity = Math.max(fadeRatio, 0);
+
+      // 2. Translação em diferentes velocidades por camada
+      layers.forEach(layer => {
+        const speed = parseFloat(layer.getAttribute('data-speed') || '0.5');
+        const yOffset = -(scrollY * speed);
+        layer.style.transform = `translate3d(0, ${yOffset}px, 0)`;
+      });
+    }
   }
-  renderKanban();
+
+  window.addEventListener('scroll', () => {
+    window.requestAnimationFrame(handleParallax);
+  }, { passive: true });
 });

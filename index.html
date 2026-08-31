@@ -107,52 +107,64 @@
 </header>
 
 <!-- Hero Section Full-Bleed -->
-<section class="hero-fullscreen" id="home">
-  <video
-    id="heroAmbientVideo"
-    class="hero-bg-video"
-    autoplay
-    loop
-    muted
-    playsinline
-    poster="assets/hero-bg.jpg"
-  >
-    <source src="assets/hero-video.mp4" type="video/mp4">
-  </video>
+<section class="hero-parallax" id="home">
+  <div class="parallax-layer layer-bg" data-speed="0.2">
+    <video
+      id="heroAmbientVideo"
+      class="hero-media"
+      autoplay
+      loop
+      muted
+      playsinline
+      poster="assets/hero-bg.jpg"
+    >
+      <source src="assets/hero-video.mp4" type="video/mp4">
+    </video>
+    <div class="vignette-overlay"></div>
+  </div>
 
-  <div class="hero-bg-overlay"></div>
-  <div class="hero-grid-pattern"></div>
+  <div class="parallax-layer layer-glow" data-speed="0.4">
+    <div class="ambient-glow"></div>
+  </div>
 
-  <div class="hero-content reveal">
-    <div class="kicker-tag" data-i18n="hero_kicker">[ PRODUCT & TECH ]</div>
+  <div class="parallax-layer layer-content" data-speed="0.6">
+    <div class="hero-container">
+      
+      <div class="hero-status">
+        <span class="status-dot"></span>
+        <span class="status-text" data-i18n="hero_status">Disponível para novos projetos</span>
+      </div>
 
-    <h1 class="hero-main-heading">
-      <span data-i18n="hero_title_1">ESTRATÉGIA DE PRODUTO</span><br>
-      <span class="hero-title-grad" data-i18n="hero_title_3">& ENGENHARIA.</span>
-    </h1>
+      <h1 class="hero-title">
+        Construindo produtos digitais na interseção de 
+        <span class="text-highlight">estratégia</span> e 
+        <span class="text-highlight">engenharia</span>.
+      </h1>
 
-    <p class="hero-lead-text" data-i18n="hero_desc">
-      Transformo problemas complexos de negócios em experiências digitais claras. Uno a visão estratégica de Product Owner com base técnica em Python e pesquisa orientada a dados.
-    </p>
+      <p class="hero-description" data-i18n="hero_desc">
+        Product Owner com background técnico em Python. Conecto discovery, dados e arquitetura de software para transformar problemas complexos em produtos escaláveis.
+      </p>
 
-    <div class="hero-action-buttons">
-      <a class="btn-primary-hero hoverable magnetic btn-shimmer" href="#contact">
-        <span data-i18n="hero_cta_main">INICIAR CONVERSA</span>
-        <span class="btn-circle-arrow">→</span>
-      </a>
-      <a class="btn-secondary-hero hoverable magnetic" href="#case-obsidian" data-i18n="hero_cta_sec">
-        VER CASES
-      </a>
-    </div>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#contact">
+          <span data-i18n="hero_cta_main">Iniciar um projeto</span>
+          <svg class="btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3.333 8h9.334M8 3.333L12.667 8 8 12.667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a class="btn-secondary" href="#case-obsidian" data-i18n="hero_cta_sec">
+          Explorar cases
+        </a>
+      </div>
 
-    <div class="hero-divider-fade"></div>
+      <ul class="hero-tech-stack" aria-label="Especialidades">
+        <li>Discovery & Métricas</li>
+        <li class="separator">/</li>
+        <li>Python Architecture</li>
+        <li class="separator">/</li>
+        <li>UX & Interfaces Complexas</li>
+      </ul>
 
-    <div class="hero-badges-row">
-      <span class="badge-tag">[ PO & DISCOVERY ]</span>
-      <span class="badge-sep">•</span>
-      <span class="badge-tag">[ PYTHON ARCHITECTURE ]</span>
-      <span class="badge-sep">•</span>
-      <span class="badge-tag">[ UX / UI FIDELITY ]</span>
     </div>
   </div>
 </section>
