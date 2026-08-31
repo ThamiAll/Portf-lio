@@ -137,11 +137,11 @@ const translations = {
     agile_burnout_note: "Zero Burnout",
     agile_predict_note: "100% PREDICTABLE DELIVERIES",
 
-    about_kicker: "QUEM SOU",
-    about_heading: "Construindo pontes entre visão de negócio, código e design",
-    about_p1: "Oi, sou a Thamires Alves! Sou movida pela curiosidade de transformar ideias complexas em produtos digitais fáceis, bonitos e gostosos de usar. Minha bagagem junta o lado analítico e investigativo da Química Computacional com a visão prática da Gestão de TI — o que me ajuda a transitar sem barreiras entre regras de negócio, código e design.",
-    about_p2: "Hoje, atuo como Product Owner (PO) no desenvolvimento de um app imobiliário, rodando Scrum lado a lado com um time incrível de devs full stack. Mas não paro só na gestão: também coloco a mão na massa no UI/UX Design criando protótipos no Figma, colaboro com o front-end e uso ferramentas como Python, Next.js, CSS, Jira, Notion e IAs (Claude e Gemini) para acelerar entregas e criar experiências digitais que realmente resolvem a vida das pessoas.",
-    about_btn: "EXPLORAR ATUAÇÃO",
+    about_kicker: "SOBRE MIM",
+    about_heading: "Menos burocracia, mais produto funcionando na prática.",
+    about_p1: "Minha jornada começou num lugar bem analítico: a química computacional. De lá para cá, passei a gerenciar produtos e a escrever código. Essa mistura me dá uma vantagem clara — consigo olhar para um sistema entendendo tanto a lógica de backend (em Python) quanto a experiência de quem vai usar a ponta da tela.",
+    about_p2: "Hoje, atuo como Product Owner liderando o desenvolvimento de plataformas digitais, do discovery até o deploy. Não acredito em fórmulas mágicas de gestão; acredito em escopo bem cortado, critérios de aceite claros, conversas francas com o time técnico e foco no que realmente resolve a dor do usuário.",
+    about_btn: "VER PILARES DE ATUAÇÃO",
 
     services_kicker: "O QUE EU FAÇO",
     services_heading: "Soluções sob medida para o ciclo de produto",
@@ -327,11 +327,12 @@ const translations = {
     agile_predict_note: "100% PREDICTABLE DELIVERIES",
 
     about_kicker: "ABOUT ME",
-    about_heading: "Bridging the gap between business vision, clean code & design",
-    about_p1: "Hi, I'm Thamires Alves! I am driven by the curiosity to transform complex ideas into intuitive, beautiful, and enjoyable digital products. My background combines the analytical and investigative mindset of Computational Chemistry with the practical execution of IT Management — allowing me to navigate seamlessly between business rules, code, and design.",
-    about_p2: "Today, I serve as Product Owner (PO) for a real estate platform, running Scrum side by side with a talented team of full-stack engineers. Beyond management, I get hands-on with UI/UX Design prototyping in Figma, collaborate with front-end code, and leverage Python, Next.js, CSS, Jira, Notion, and AI workflows (Claude & Gemini) to accelerate deliveries and craft digital experiences that genuinely solve real-world problems.",
-    about_btn: "EXPLORE SERVICES",
-
+    about_heading: "Less friction, more software that actually works.",
+    about_p1: "My background started in a deeply analytical space: computational chemistry. From there, I moved into product management and software engineering. That blend gives me a sharp edge — I can look at a system and grasp both the backend logic (in Python) and the end-user experience.",
+    about_p2: "Today, I work as a Product Owner leading digital products from discovery to deployment. I don't believe in corporate buzzwords; I believe in tight scopes, clear acceptance criteria, transparent engineering alignment, and focusing on what genuinely solves problems.",
+    about_p2: "Today, I work as a Product Owner leading digital platforms from discovery to deployment. I don't believe in corporate management myths; I believe in crisp scopes, clear acceptance criteria, direct engineering alignment, and focusing on what actually moves the needle.",
+    about_btn: "EXPLORE CORE PILLARS",
+    
     services_kicker: "WHAT I DO",
     services_heading: "Tailored solutions across the entire product lifecycle",
     btn_learn_more: "LEARN MORE",
