@@ -1876,3 +1876,15 @@ footer{ border-top:1px solid var(--line); padding:8vh 5vw 6vh; position: relativ
 .reveal.in{ opacity:1; transform:translateY(0); }
 .stagger-reveal > *{ opacity:0; transform:translateY(24px); transition:opacity .6s var(--ease-smooth), transform .6s var(--ease-smooth); }
 .stagger-reveal.in > *{ opacity:1; transform:translateY(0); }
+
+.hero-bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.55; /* Deixa a imagem sutil no fundo escuro */
+  mix-blend-mode: luminosity; /* Mescla a cor com o tom do portfólio */
+  pointer-events: none;
+}
