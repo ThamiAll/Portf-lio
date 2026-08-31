@@ -137,11 +137,11 @@ const translations = {
     agile_burnout_note: "Zero Burnout",
     agile_predict_note: "100% PREDICTABLE DELIVERIES",
 
-    about_kicker: "SOBRE MIM",
-    about_heading: "Menos burocracia, mais produto funcionando na prática.",
-    about_p1: "Minha jornada começou num lugar bem analítico: a química computacional. De lá para cá, passei a gerenciar produtos e a escrever código. Essa mistura me dá uma vantagem clara — consigo olhar para um sistema entendendo tanto a lógica de backend (em Python) quanto a experiência de quem vai usar a ponta da tela.",
-    about_p2: "Hoje, atuo como Product Owner liderando o desenvolvimento de plataformas digitais, do discovery até o deploy. Não acredito em fórmulas mágicas de gestão; acredito em escopo bem cortado, critérios de aceite claros, conversas francas com o time técnico e foco no que realmente resolve a dor do usuário.",
-    about_btn: "VER PILARES DE ATUAÇÃO",
+    about_kicker: "QUEM SOU",
+    about_heading: "Construindo pontes entre visão de negócio, código e design",
+    about_p1: "Oi, sou a Thamires! Sou movida pela curiosidade de transformar ideias complexas em produtos digitais fáceis, bonitos e gostosos de usar. Minha bagagem junta o lado analítico e investigativo da Química Computacional com a visão prática da Gestão de TI — o que me ajuda a transitar sem barreiras entre regras de negócio, código e design.",
+    about_p2: "Hoje, atuo como Product Owner (PO) no desenvolvimento de produtos, rodando Scrum lado a lado com times incríveis de devs. Mas não paro só na gestão: também coloco a mão na massa no UI/UX Design criando protótipos no Figma, colaboro com o front-end e uso ferramentas como Python, Next.js, Notion e IAs para acelerar entregas e criar experiências que realmente resolvem a vida das pessoas.",
+    about_btn: "EXPLORAR ATUAÇÃO",
 
     services_kicker: "O QUE EU FAÇO",
     services_heading: "Soluções sob medida para o ciclo de produto",
@@ -327,12 +327,11 @@ const translations = {
     agile_predict_note: "100% PREDICTABLE DELIVERIES",
 
     about_kicker: "ABOUT ME",
-    about_heading: "Less friction, more software that actually works.",
-    about_p1: "My background started in a deeply analytical space: computational chemistry. From there, I moved into product management and software engineering. That blend gives me a sharp edge — I can look at a system and grasp both the backend logic (in Python) and the end-user experience.",
-    about_p2: "Today, I work as a Product Owner leading digital products from discovery to deployment. I don't believe in corporate buzzwords; I believe in tight scopes, clear acceptance criteria, transparent engineering alignment, and focusing on what genuinely solves problems.",
-    about_p2: "Today, I work as a Product Owner leading digital platforms from discovery to deployment. I don't believe in corporate management myths; I believe in crisp scopes, clear acceptance criteria, direct engineering alignment, and focusing on what actually moves the needle.",
-    about_btn: "EXPLORE CORE PILLARS",
-    
+    about_heading: "Building bridges between business vision, code & design",
+    about_p1: "Hi, I'm Thamires! I'm driven by curiosity and a passion for turning complex ideas into digital products that are smooth, intuitive, and actually fun to use. My background blends the analytical side of Computational Chemistry with the practical execution of IT Management — helping me move effortlessly between business rules, code, and design.",
+    about_p2: "Today, I work as a Product Owner shipping digital products while running Scrum side-by-side with awesome engineering teams. But I don't stop at management: I also get my hands dirty in UI/UX design prototyping in Figma, collaborating on front-end code, and leveraging tools like Python, Next.js, and AI workflows to speed up deliveries and craft real-world solutions.",
+    about_btn: "EXPLORE SERVICES",
+
     services_kicker: "WHAT I DO",
     services_heading: "Tailored solutions across the entire product lifecycle",
     btn_learn_more: "LEARN MORE",
