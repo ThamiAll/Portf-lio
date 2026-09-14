@@ -234,12 +234,6 @@ nav.links{ display:flex; align-items:center; gap:1.8vw; }
 }
 
 .nav-right{ display:flex; align-items:center; gap:14px; }
-.status-badge{
-  display:flex; align-items:center; gap:8px; font-family:var(--font-mono); font-size:0.68rem;
-  letter-spacing:0.06em; color:var(--ink-dim); border:1px solid var(--line); padding:7px 13px; border-radius:999px; background:rgba(255,255,255,0.02);
-  transition:all .3s var(--ease-smooth);
-}
-.status-badge:hover{ border-color:var(--ok); color:var(--ink); transform:translateY(-2px); box-shadow:0 6px 16px -4px rgba(77,255,158,0.25); }
 .status-dot{ width:6px; height:6px; border-radius:50%; background:var(--ok); box-shadow:0 0 0 0 rgba(77,255,158,0.6); animation:pulse 2s infinite; }
 @keyframes pulse{ 0%{ box-shadow:0 0 0 0 rgba(77,255,158,0.6);} 70%{ box-shadow:0 0 0 8px rgba(77,255,158,0);} 100%{ box-shadow:0 0 0 0 rgba(77,255,158,0);} }
 
@@ -286,7 +280,7 @@ nav.links{ display:flex; align-items:center; gap:1.8vw; }
   box-shadow:0 10px 24px -4px rgba(249,249,251,0.35); 
 }
 .nav-cta:active{ transform:scale(0.97); }
-@media(max-width:960px){ nav.links{ display:none; } .status-badge{ display:none; } }
+@media(max-width:960px){ nav.links{ display:none; } }
 
 /* ---------- FULL-BLEED HERO SECTION ---------- */
 .hero-fullscreen {

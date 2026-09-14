@@ -22,7 +22,6 @@ const translations = {
     nav_about_pillars_desc: "Engenharia, Produto & Liderança",
     nav_process: "Processo",
     nav_contact: "Contato",
-    nav_status: "DISPONÍVEL",
     nav_cta: "Vamos Conversar",
 
     hero_kicker: "PRODUCT & TECH",
@@ -211,7 +210,6 @@ const translations = {
     nav_about_pillars_desc: "Engineering, Product & Leadership",
     nav_process: "Process",
     nav_contact: "Contact",
-    nav_status: "AVAILABLE",
     nav_cta: "Let's Talk",
 
     hero_kicker: "PRODUCT & TECH",
